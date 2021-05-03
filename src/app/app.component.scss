@@ -1,0 +1,11 @@
+
+:host{
+
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  margin: 0 !important;
+
+  app-nav{
+    background-color: blue;
+  }
+}
