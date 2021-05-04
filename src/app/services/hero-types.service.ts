@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { HeroType } from '../models/heroType';
 
 @Injectable({
@@ -14,7 +15,14 @@ export class HeroTypesService {
     private db: AngularFirestore
   ) { }
 
-  getHeroType(){
-    return this.db.collection('Testing/Data/HeroTypes').valueChanges({idField: 'id'});
+  getHeroType(): Observable<HeroType[]>{
+    return this.db.collection('Testing/Data/HeroTypes').valueChanges(
+      {idField: 'id'}
+    ).pipe(
+      map((heroTypesFormDB:any) => {
+        heroTypesFormDB.map(heroTypeFromDB => new HeroType(heroTypeFromDB))
+        return heroTypesFormDB;
+      })
+    )
   }
 }

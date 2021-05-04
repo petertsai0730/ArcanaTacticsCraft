@@ -1,5 +1,12 @@
-<ng-container *ngFor="let hero of heroes$ | async">
-  <div class="hero-item" [ngStyle]="{'background-color': hero.type.color}">
-    {{ hero.name }}
+
+
+<div class="hero-list-container">
+  <div class="star-container" *ngFor="let heroByStar of heroesByStar$ | async">
+    <ng-container *ngFor="let hero of heroByStar">
+      <div class="hero-item" id="{{hero.type.toLowerCase()}}" [ngClass]="{'inactiveItem': !hero.active}" (click)="selectedHeroItem(hero)">
+        {{ hero.name }}
+        <span *ngIf="hero.combinationNumber && hero.combinationNumber > 1">X {{ hero.combinationNumber }}</span>
+      </div>
+    </ng-container>
   </div>
-</ng-container>
+</div>
