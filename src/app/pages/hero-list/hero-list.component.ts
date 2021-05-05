@@ -80,8 +80,10 @@ export class HeroListComponent implements OnInit, OnDestroy {
       return;
     }
 
-    const activeHeroes = this.getCombinationHeroesList(selectedHero);
-    this.getUpdateHeroList(selectedHero);
+    const activeHeroes = [
+      ...this.getCombinationHeroesList(selectedHero),
+      ...this.getUpdateHeroList(selectedHero)
+    ];
 
     const heroes = this.heroes$.value;
     for (const hero of heroes) {
@@ -115,16 +117,28 @@ export class HeroListComponent implements OnInit, OnDestroy {
   }
 
   getUpdateHeroList(hero: HeroItem) {
-    let heroList = [];
-    let combinationList = [hero.id];
-    let heroesByStar = this.heroesByStar$.value;
-    for (let star = hero.star; star < heroesByStar.length; star++) {
-      console.log(star);
-      for (let sHero of heroesByStar[star]) {
+    const heroList = [];
+    const heroLoop = [];
+    if (hero.upgradeId && hero.upgradeId.length > 0) {
+      heroLoop.push(...hero.upgradeId);
+    }
+    while (heroLoop.length > 0) {
+      let tempHeroId = heroLoop.pop();
+      if (!tempHeroId) {
+        break;
+      }
+      let tmpHero = this.heroMap.get(tempHeroId);
+      if (tmpHero) {
+        heroList.push(tmpHero.id);
+        if (tmpHero.upgradeId && tmpHero.upgradeId.length > 0) {
+          heroLoop.push(...tmpHero.upgradeId);
+        }
       }
     }
-
-    return heroList;
+    const result = heroList.filter((hero, index, array) => {
+      return array.indexOf(hero) === index;
+    });
+    return result;
   }
 
   resetHeroItemsActive() {
