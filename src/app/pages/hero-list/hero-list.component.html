@@ -1,7 +1,3 @@
-
-
-<button (click)="importHeroes()">import heroes</button>
-
 <div class="hero-list-container">
   <ng-container *ngFor="let heroByStar of heroesByStar$ | async">
     <div class="star-container" *ngIf="heroByStar.length > 0">

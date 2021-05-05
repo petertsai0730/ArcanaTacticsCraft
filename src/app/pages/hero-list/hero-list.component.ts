@@ -123,8 +123,4 @@ export class HeroListComponent implements OnInit, OnDestroy {
     }
     this.heroes$.next(heroes);
   }
-
-  importHeroes() {
-    this.heroesService.getHeroesRef();
-  }
 }

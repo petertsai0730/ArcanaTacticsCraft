@@ -12,6 +12,7 @@ export class HeroItem {
   isSelected?: boolean;
   active?: boolean;
   combinationNumber?: number;
+  label?: string[];
 
   constructor(hero: Hero) {
     this.id = hero.id;
@@ -20,6 +21,7 @@ export class HeroItem {
     this.class = hero.class;
     this.star = hero.star;
     this.combinationId = hero.combinationId;
+    this.label = hero.label;
     this.active = true;
   }
 }
