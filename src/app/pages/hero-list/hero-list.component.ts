@@ -81,6 +81,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
     }
 
     const activeHeroes = this.getCombinationHeroesList(selectedHero);
+    this.getUpdateHeroList(selectedHero);
 
     const heroes = this.heroes$.value;
     for (const hero of heroes) {
@@ -114,11 +115,16 @@ export class HeroListComponent implements OnInit, OnDestroy {
   }
 
   getUpdateHeroList(hero: HeroItem) {
-    // let heroList = [];
-    // let updateHeroes = this.heroes$.value.filter(hero => !!hero?.combinationId.find(heroId => heroId === hero.id));
-    // heroList.push(...updateHeroes);
-    // for(let uHero of updateHeroes){
-    // }
+    let heroList = [];
+    let combinationList = [hero.id];
+    let heroesByStar = this.heroesByStar$.value;
+    for (let star = hero.star; star < heroesByStar.length; star++) {
+      console.log(star);
+      for (let sHero of heroesByStar[star]) {
+      }
+    }
+
+    return heroList;
   }
 
   resetHeroItemsActive() {

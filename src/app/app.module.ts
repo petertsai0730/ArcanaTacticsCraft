@@ -11,12 +11,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroListComponent } from './pages/hero-list/hero-list.component';
 import { NavComponent } from './nav/nav.component';
+import { DevelopComponent } from './pages/develop/develop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroListComponent,
-    NavComponent
+    NavComponent,
+    DevelopComponent
   ],
   imports: [
     BrowserModule,

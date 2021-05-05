@@ -8,6 +8,7 @@ export class Hero {
   role: string;
   star: number;
   combinationId?: string[];
+  upgradeId?: string[];
   label?: string[];
 
   constructor(heroFromDB: any) {
@@ -18,6 +19,7 @@ export class Hero {
     this.role = heroFromDB.role;
     this.star = heroFromDB.star;
     this.combinationId = heroFromDB.combinationId;
+    this.upgradeId = heroFromDB.upgradeId;
     this.label = heroFromDB.label;
   }
 }

@@ -28,7 +28,7 @@ export class HeroesService {
         for (const hero of heroes) {
           newHeroes.push(this.setupHeroInfo(hero.split(',')));
         }
-        return newHeroes;
+        return this.setupHeroUpgrdeId(newHeroes);
       }),
       switchMap((heroes) => {
         const heroesStream = heroes.map((hero) =>
@@ -59,12 +59,32 @@ export class HeroesService {
       class: heroInfo[2],
       type: heroInfo[3],
       role: heroInfo[4],
-      combinationId: [
-        Md5.hashStr(heroInfo[5]).toString(),
-        Md5.hashStr(heroInfo[6]).toString()
-      ],
       label: [heroInfo[0], heroInfo[7]]
     };
+    //combinationId
+    if (newHero.star !== 1) {
+      newHero.combinationId = [
+        Md5.hashStr(heroInfo[5]).toString(),
+        Md5.hashStr(heroInfo[6]).toString()
+      ];
+    }
     return newHero;
+  }
+
+  private setupHeroUpgrdeId(heroes: Hero[]) {
+    for (let hero of heroes) {
+      if (hero.combinationId && hero.combinationId.length > 0) {
+        for (let cHeroId of hero.combinationId) {
+          let cHero = heroes.find((h) => h.id === cHeroId);
+          if (cHero) {
+            if (!cHero.upgradeId) {
+              cHero['upgradeId'] = [];
+            }
+            cHero.upgradeId.push(hero.id);
+          }
+        }
+      }
+    }
+    return heroes;
   }
 }
