@@ -15,8 +15,9 @@ export class HeroListComponent implements OnInit, OnDestroy {
   heroes$ = new BehaviorSubject<HeroItem[]>([]);
   destory$ = new Subject<void>();
 
-  // star
+  // hero
   heroesByStar$ = new BehaviorSubject<Array<HeroItem[]>>([]);
+  heroMap = new Map<string, HeroItem>();
 
   selectMode = false;
 
@@ -47,6 +48,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
           for (const hero of heroes) {
             const heroItem = new HeroItem(hero);
             heroItems.push(heroItem);
+            this.heroMap.set(heroItem.id, heroItem);
           }
           return heroItems;
         })
@@ -94,14 +96,19 @@ export class HeroListComponent implements OnInit, OnDestroy {
 
   getCombinationHeroesList(hero: HeroItem) {
     const heroList = [];
-    heroList.push(hero.id);
-    if (hero.combinationId && hero.combinationId.length > 0) {
-      hero.combinationId.map((heroId) => {
-        const combinationHero = this.heroes$.value.find((h) => h.id === heroId);
-        if (combinationHero) {
-          heroList.push(...this.getCombinationHeroesList(combinationHero));
+    const heroLoop = [hero.id];
+    while (heroLoop.length > 0) {
+      let tempHeroId = heroLoop.pop();
+      if (!tempHeroId) {
+        break;
+      }
+      let tmpHero = this.heroMap.get(tempHeroId);
+      if (tmpHero) {
+        heroList.push(tmpHero.id);
+        if (tmpHero.combinationId && tmpHero.combinationId.length > 0) {
+          heroLoop.push(...tmpHero.combinationId);
         }
-      });
+      }
     }
     return heroList;
   }

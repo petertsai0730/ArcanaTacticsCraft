@@ -28,8 +28,7 @@ export class Api implements ApiInterface {
   };
 
   getHeroes = () => {
-    return this.angularFirestore
-      .collection('Testing/Data/Heroes')
+    return this.getCollection<Hero>('heroes')
       .valueChanges({ idField: 'id' })
       .pipe(
         map((heroesFromDB: any) => {

@@ -19,12 +19,6 @@ export class HeroesService {
     return this.api.getHeroes();
   }
 
-  getHeroesRef() {
-    return this.httpClient.get('/assets/docs/heroes-ref.txt', {
-      responseType: 'text'
-    });
-  }
-
   importHeroesToDB() {
     return this.getHeroesRef().pipe(
       filter((res) => !!res),
@@ -49,6 +43,12 @@ export class HeroesService {
           : Status.NOT_LOADED
       )
     );
+  }
+
+  private getHeroesRef() {
+    return this.httpClient.get('/assets/docs/heroes-ref.txt', {
+      responseType: 'text'
+    });
   }
 
   private setupHeroInfo(heroInfo: string[]): Hero {
