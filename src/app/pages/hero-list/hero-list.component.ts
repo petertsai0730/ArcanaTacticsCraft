@@ -75,7 +75,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
       return;
     }
 
-    let activeHeroes = this.getActiveHeroesList(selectedHero);
+    let activeHeroes = this.getCombinationHeroesList(selectedHero);
 
     let heroes = this.heroes$.value;
     for(let hero of heroes){
@@ -88,18 +88,27 @@ export class HeroListComponent implements OnInit, OnDestroy {
     this.heroes$.next(heroes);
   }
 
-  getActiveHeroesList(hero: HeroItem){
+  getCombinationHeroesList(hero: HeroItem){
     let heroList = [];
     heroList.push(hero.id);
     if(hero.combinationId && hero.combinationId.length > 0){
       hero.combinationId.map(heroId => {
         let combinationHero = this.heroes$.value.find(h => h.id === heroId);
         if(combinationHero){
-          heroList.push(...this.getActiveHeroesList(combinationHero));
+          heroList.push(...this.getCombinationHeroesList(combinationHero));
         }
       })
     }
     return heroList;
+  }
+
+  getUpdateHeroList(hero: HeroItem){
+    // let heroList = [];
+    // let updateHeroes = this.heroes$.value.filter(hero => !!hero?.combinationId.find(heroId => heroId === hero.id));
+    // heroList.push(...updateHeroes);
+    // for(let uHero of updateHeroes){
+
+    // }
   }
 
   resetHeroItemsActive(){
