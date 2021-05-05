@@ -55,7 +55,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
       )
       .subscribe(this.heroes$);
 
-    // this.heroes$.subscribe(res=> console.log(res));
+    this.heroesService.heroes$.subscribe((res) => console.log(res));
   }
 
   filterHeroesWithStar() {

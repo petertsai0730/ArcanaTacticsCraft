@@ -1,0 +1,2664 @@
+[
+    {
+        "id": "4037fcedb7a978969e98a5e8408fea50",
+        "name": "Swordsman",
+        "star": 1,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Defense",
+        "label": [
+            "Swordsman",
+            "劍士"
+        ],
+        "upgradeId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "f4c17b587a99337e4f5a8e37cdb2a858",
+            "f4c17b587a99337e4f5a8e37cdb2a858",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ]
+    },
+    {
+        "id": "55429fa01b19f7193811ed985797b9b9",
+        "name": "Archer",
+        "star": 1,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Archer",
+            "弓箭手"
+        ],
+        "upgradeId": [
+            "007be3acd5669d100711b13d79e23369",
+            "007be3acd5669d100711b13d79e23369",
+            "9b07aab07b5fa3f77e5d1f86c9a43b97",
+            "51a547788c5ebad8e66b330b9fa747c5",
+            "76432ae42af38d2915538d6ee28f6971"
+        ]
+    },
+    {
+        "id": "ae412534db3879501923fa67e0ea0174",
+        "name": "Rogue",
+        "star": 1,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Rogue",
+            "盜賊"
+        ],
+        "upgradeId": [
+            "9b07aab07b5fa3f77e5d1f86c9a43b97",
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ]
+    },
+    {
+        "id": "5af874093e5efcbaeb4377b84c5f2ec5",
+        "name": "Wizard",
+        "star": 1,
+        "class": "Wizard",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Wizard",
+            "巫師"
+        ],
+        "upgradeId": [
+            "39babca9e3d0ceda5051773a25fe2a4f",
+            "39babca9e3d0ceda5051773a25fe2a4f",
+            "578f6b829abd7b984a8465def59115cc",
+            "e7b1c3af3203c42e8a5450beb229c09e"
+        ]
+    },
+    {
+        "id": "88f6c01a3b5711ec2a896c9f5462497c",
+        "name": "Cleric",
+        "star": 1,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Cleric",
+            "祭司"
+        ],
+        "upgradeId": [
+            "e7b1c3af3203c42e8a5450beb229c09e",
+            "51a547788c5ebad8e66b330b9fa747c5",
+            "738e8b6f710526ee635cbb7dbf4e8530",
+            "e5ea56a64dedf72d7bfffbd4251d52bc",
+            "e5ea56a64dedf72d7bfffbd4251d52bc"
+        ]
+    },
+    {
+        "id": "7ee7fa010d64b90a36803a8445f2e943",
+        "name": "Warrior",
+        "star": 1,
+        "class": "Warrior",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Warrior",
+            "戰士"
+        ],
+        "upgradeId": [
+            "578f6b829abd7b984a8465def59115cc",
+            "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "844a2b0ce474227509eb629bc56c1359"
+        ]
+    },
+    {
+        "id": "f7407edad1ded2d8d1e634ed49a9698e",
+        "name": "Lancer",
+        "star": 1,
+        "class": "Lancer",
+        "type": "Ice",
+        "role": "Defense",
+        "label": [
+            "Lancer",
+            "槍術士"
+        ],
+        "upgradeId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "25d6e85196930427863b83c573490d90",
+            "25d6e85196930427863b83c573490d90",
+            "76432ae42af38d2915538d6ee28f6971",
+            "fe94f888001c39006b96f0fc39d689a6"
+        ]
+    },
+    {
+        "id": "ae4cccea87290717523772f7472e7f5e",
+        "name": "Spirit",
+        "star": 1,
+        "class": "Spirit",
+        "type": "Iron",
+        "role": "Support",
+        "label": [
+            "Spirit",
+            "精靈"
+        ],
+        "upgradeId": [
+            "844a2b0ce474227509eb629bc56c1359",
+            "738e8b6f710526ee635cbb7dbf4e8530",
+            "fe94f888001c39006b96f0fc39d689a6",
+            "2de3fae2de050ff6934ac65713c99936",
+            "2de3fae2de050ff6934ac65713c99936"
+        ]
+    },
+    {
+        "id": "b3c5337f82b74066a2b6bcd7f63d9185",
+        "name": "Spell Sword",
+        "star": 2,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Spell Sword",
+            "魔劍士"
+        ],
+        "combinationId": [
+            "4037fcedb7a978969e98a5e8408fea50",
+            "f7407edad1ded2d8d1e634ed49a9698e"
+        ],
+        "upgradeId": [
+            "dde107f2539783f6bab65e78a6047f4a",
+            "e84733130b507e4221aac562ef7525ee",
+            "3d7491a4536e8a468755c3c70a3c3016",
+            "b4e653c14a288889b7921ee46266806b"
+        ]
+    },
+    {
+        "id": "f4c17b587a99337e4f5a8e37cdb2a858",
+        "name": "Paladin",
+        "star": 2,
+        "class": "Swodsman",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Paladin",
+            "聖騎士"
+        ],
+        "combinationId": [
+            "4037fcedb7a978969e98a5e8408fea50",
+            "4037fcedb7a978969e98a5e8408fea50"
+        ],
+        "upgradeId": [
+            "dde107f2539783f6bab65e78a6047f4a",
+            "ee90445284a3f5eb04b08417e16ecb95",
+            "be39f562e01b65e55bf0e2b03c085340",
+            "5588cb8830fdb8ac7159b7cf5d1e611e"
+        ]
+    },
+    {
+        "id": "007be3acd5669d100711b13d79e23369",
+        "name": "Sniper",
+        "star": 2,
+        "class": "Archer",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Sniper",
+            "狙擊手"
+        ],
+        "combinationId": [
+            "55429fa01b19f7193811ed985797b9b9",
+            "55429fa01b19f7193811ed985797b9b9"
+        ],
+        "upgradeId": [
+            "71e79ef80600d398d90cfebe3b0b758d",
+            "b23f665210a1914cab61bc8eba4c9ae0",
+            "e60b65c860681c0a53fcded0e33fc6de"
+        ]
+    },
+    {
+        "id": "9b07aab07b5fa3f77e5d1f86c9a43b97",
+        "name": "Chaser",
+        "star": 2,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Chaser",
+            "追擊者"
+        ],
+        "combinationId": [
+            "55429fa01b19f7193811ed985797b9b9",
+            "ae412534db3879501923fa67e0ea0174"
+        ],
+        "upgradeId": [
+            "71e79ef80600d398d90cfebe3b0b758d",
+            "5e409e09f43d85c6e61301149e4f803b",
+            "e466ff6b7017bfcc62451718fb431f92",
+            "52f4fd6e07de3462457acb096f3f4603"
+        ]
+    },
+    {
+        "id": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+        "name": "Assassin",
+        "star": 2,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Assassin",
+            "刺客"
+        ],
+        "combinationId": [
+            "ae412534db3879501923fa67e0ea0174",
+            "ae412534db3879501923fa67e0ea0174"
+        ],
+        "upgradeId": [
+            "074afeda56fb27564aeb1315be28036b",
+            "121189969c46f49b8249633c2d5a7bfa",
+            "21305b754e03843876abc27387a0e57e",
+            "246d4b1d4f9480e46c982d4111d95378"
+        ]
+    },
+    {
+        "id": "afb87b393d9c759e8a218b56d0f895e0",
+        "name": "Ninja",
+        "star": 2,
+        "class": "Rogue",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Ninja",
+            "忍者"
+        ],
+        "combinationId": [
+            "4037fcedb7a978969e98a5e8408fea50",
+            "ae412534db3879501923fa67e0ea0174"
+        ],
+        "upgradeId": [
+            "be39f562e01b65e55bf0e2b03c085340",
+            "074afeda56fb27564aeb1315be28036b",
+            "3d7491a4536e8a468755c3c70a3c3016",
+            "53eff025ac07f0cedcd87efcd52b4b95"
+        ]
+    },
+    {
+        "id": "39babca9e3d0ceda5051773a25fe2a4f",
+        "name": "Sorcerer",
+        "star": 2,
+        "class": "Wizard",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Sorcerer",
+            "法師"
+        ],
+        "combinationId": [
+            "5af874093e5efcbaeb4377b84c5f2ec5",
+            "5af874093e5efcbaeb4377b84c5f2ec5"
+        ],
+        "upgradeId": [
+            "53eff025ac07f0cedcd87efcd52b4b95",
+            "f64162c264d5679d130b6e8ae84d704e",
+            "21305b754e03843876abc27387a0e57e",
+            "d17729a5c0334741f43b3fdc4c3a27ab"
+        ]
+    },
+    {
+        "id": "578f6b829abd7b984a8465def59115cc",
+        "name": "Shaman",
+        "star": 2,
+        "class": "Wizard",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Shaman",
+            "薩滿"
+        ],
+        "combinationId": [
+            "5af874093e5efcbaeb4377b84c5f2ec5",
+            "7ee7fa010d64b90a36803a8445f2e943"
+        ],
+        "upgradeId": [
+            "d17729a5c0334741f43b3fdc4c3a27ab",
+            "e466ff6b7017bfcc62451718fb431f92",
+            "19a1a8103bf352e6d8b22fa2e0620e54",
+            "b4b46e6ce2c563dd296e8bae768e1b9d"
+        ]
+    },
+    {
+        "id": "e7b1c3af3203c42e8a5450beb229c09e",
+        "name": "Druid",
+        "star": 2,
+        "class": "Cleric",
+        "type": "Nature",
+        "role": "Support",
+        "label": [
+            "Druid",
+            "德魯伊"
+        ],
+        "combinationId": [
+            "5af874093e5efcbaeb4377b84c5f2ec5",
+            "88f6c01a3b5711ec2a896c9f5462497c"
+        ],
+        "upgradeId": [
+            "8581ca1b40455a48b3f61e1de4a3cd11",
+            "52f4fd6e07de3462457acb096f3f4603",
+            "5ee5ec9d8e6b181960c2be1df5f1ad81",
+            "2aaa3e8ae5da0cb963cd62087faf5566"
+        ]
+    },
+    {
+        "id": "51a547788c5ebad8e66b330b9fa747c5",
+        "name": "Bard",
+        "star": 2,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Bard",
+            "吟遊詩人"
+        ],
+        "combinationId": [
+            "55429fa01b19f7193811ed985797b9b9",
+            "88f6c01a3b5711ec2a896c9f5462497c"
+        ],
+        "upgradeId": [
+            "5e409e09f43d85c6e61301149e4f803b",
+            "246d4b1d4f9480e46c982d4111d95378",
+            "fad1fd24e1b72465ab5056777d82598e"
+        ]
+    },
+    {
+        "id": "0a697cba19cd4c1974e2ee11a3c0b9c7",
+        "name": "Barbarian",
+        "star": 2,
+        "class": "Warrior",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Barbarian",
+            "異邦人"
+        ],
+        "combinationId": [
+            "7ee7fa010d64b90a36803a8445f2e943",
+            "7ee7fa010d64b90a36803a8445f2e943"
+        ],
+        "upgradeId": [
+            "ee90445284a3f5eb04b08417e16ecb95",
+            "5ee5ec9d8e6b181960c2be1df5f1ad81",
+            "f92b36491af502e1a73ef7aa499211b0",
+            "0f0a37f6d1c2f28437b034a6d76ee615"
+        ]
+    },
+    {
+        "id": "844a2b0ce474227509eb629bc56c1359",
+        "name": "Monk",
+        "star": 2,
+        "class": "Warrior",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Monk",
+            "武僧"
+        ],
+        "combinationId": [
+            "7ee7fa010d64b90a36803a8445f2e943",
+            "ae4cccea87290717523772f7472e7f5e"
+        ],
+        "upgradeId": [
+            "f92b36491af502e1a73ef7aa499211b0",
+            "5588cb8830fdb8ac7159b7cf5d1e611e",
+            "19a1a8103bf352e6d8b22fa2e0620e54",
+            "953fc7678dcd1bd8726eb7be0e961744"
+        ]
+    },
+    {
+        "id": "25d6e85196930427863b83c573490d90",
+        "name": "Guardian",
+        "star": 2,
+        "class": "Lancer",
+        "type": "Iron",
+        "role": "Support",
+        "label": [
+            "Guardian",
+            "護衛"
+        ],
+        "combinationId": [
+            "f7407edad1ded2d8d1e634ed49a9698e",
+            "f7407edad1ded2d8d1e634ed49a9698e"
+        ],
+        "upgradeId": [
+            "95116ecd84c8e4e43c29629b68775bbd",
+            "2aaa3e8ae5da0cb963cd62087faf5566",
+            "0f0a37f6d1c2f28437b034a6d76ee615"
+        ]
+    },
+    {
+        "id": "76432ae42af38d2915538d6ee28f6971",
+        "name": "Fencer",
+        "star": 2,
+        "class": "Lancer",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Fencer",
+            "擊劍士"
+        ],
+        "combinationId": [
+            "f7407edad1ded2d8d1e634ed49a9698e",
+            "55429fa01b19f7193811ed985797b9b9"
+        ],
+        "upgradeId": [
+            "b23f665210a1914cab61bc8eba4c9ae0",
+            "95116ecd84c8e4e43c29629b68775bbd",
+            "b4e653c14a288889b7921ee46266806b"
+        ]
+    },
+    {
+        "id": "738e8b6f710526ee635cbb7dbf4e8530",
+        "name": "Enchanter",
+        "star": 2,
+        "class": "Spirit",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Enchanter",
+            "魔法師"
+        ],
+        "combinationId": [
+            "88f6c01a3b5711ec2a896c9f5462497c",
+            "ae4cccea87290717523772f7472e7f5e"
+        ],
+        "upgradeId": [
+            "f64162c264d5679d130b6e8ae84d704e",
+            "8581ca1b40455a48b3f61e1de4a3cd11",
+            "b4b46e6ce2c563dd296e8bae768e1b9d",
+            "fad1fd24e1b72465ab5056777d82598e"
+        ]
+    },
+    {
+        "id": "fe94f888001c39006b96f0fc39d689a6",
+        "name": "Blacksmith",
+        "star": 2,
+        "class": "Spirit",
+        "type": "Fire",
+        "role": "Support",
+        "label": [
+            "Blacksmith",
+            "鐵匠"
+        ],
+        "combinationId": [
+            "f7407edad1ded2d8d1e634ed49a9698e",
+            "ae4cccea87290717523772f7472e7f5e"
+        ],
+        "upgradeId": [
+            "e84733130b507e4221aac562ef7525ee",
+            "e60b65c860681c0a53fcded0e33fc6de",
+            "121189969c46f49b8249633c2d5a7bfa",
+            "953fc7678dcd1bd8726eb7be0e961744"
+        ]
+    },
+    {
+        "id": "dde107f2539783f6bab65e78a6047f4a",
+        "name": "Rune Knight",
+        "star": 3,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Rune Knight",
+            "符文棋士"
+        ],
+        "combinationId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "f4c17b587a99337e4f5a8e37cdb2a858"
+        ],
+        "upgradeId": [
+            "78435a4a17caa85d27282d81186f304d",
+            "41ec7654980ebb6941e79e942c3a3f0a",
+            "0af3f80a54716414f24a166e5c1b6c26"
+        ]
+    },
+    {
+        "id": "e84733130b507e4221aac562ef7525ee",
+        "name": "Highlander",
+        "star": 3,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Highlander",
+            "高地人"
+        ],
+        "combinationId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "fe94f888001c39006b96f0fc39d689a6"
+        ],
+        "upgradeId": [
+            "93ad9bfa6d2aa9199ab848abc0ae1404",
+            "41ec7654980ebb6941e79e942c3a3f0a",
+            "5617d73c694ad8f8004009e0f6b2e3d6"
+        ]
+    },
+    {
+        "id": "ee90445284a3f5eb04b08417e16ecb95",
+        "name": "Defender",
+        "star": 3,
+        "class": "Swordsman",
+        "type": "Dark",
+        "role": "Defense",
+        "label": [
+            "Defender",
+            "防衛者"
+        ],
+        "combinationId": [
+            "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "f4c17b587a99337e4f5a8e37cdb2a858"
+        ],
+        "upgradeId": [
+            "93ad9bfa6d2aa9199ab848abc0ae1404",
+            "5ce8b65747cd41acd3f9b9636df9a84f",
+            "cf00082fc7168929f6a90cb0ddd225d8"
+        ]
+    },
+    {
+        "id": "be39f562e01b65e55bf0e2b03c085340",
+        "name": "Crusader",
+        "star": 3,
+        "class": "Swordsman",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Crusader",
+            "十字軍"
+        ],
+        "combinationId": [
+            "f4c17b587a99337e4f5a8e37cdb2a858",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ],
+        "upgradeId": [
+            "1ca33704c2ae22ce138fbe6b76a2ef16",
+            "f48a8f161502989fca609408a80bd754",
+            "be19296ec8caa16086428364b4d8499c"
+        ]
+    },
+    {
+        "id": "71e79ef80600d398d90cfebe3b0b758d",
+        "name": "Scout",
+        "star": 3,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Scout",
+            "童軍"
+        ],
+        "combinationId": [
+            "007be3acd5669d100711b13d79e23369",
+            "9b07aab07b5fa3f77e5d1f86c9a43b97"
+        ],
+        "upgradeId": [
+            "6a81c47366143ba5f8a1c0b6ef9facd2",
+            "8875a6e498ff20b1553ff264e9b07a53",
+            "eb1a435cd0d6cb4bee3f992ddd610d6d"
+        ]
+    },
+    {
+        "id": "b23f665210a1914cab61bc8eba4c9ae0",
+        "name": "Ranger",
+        "star": 3,
+        "class": "Archer",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Ranger",
+            "遊俠"
+        ],
+        "combinationId": [
+            "007be3acd5669d100711b13d79e23369",
+            "76432ae42af38d2915538d6ee28f6971"
+        ],
+        "upgradeId": [
+            "8875a6e498ff20b1553ff264e9b07a53",
+            "5ce8b65747cd41acd3f9b9636df9a84f",
+            "a7160888783b70519b2314c70956aeb9"
+        ]
+    },
+    {
+        "id": "5e409e09f43d85c6e61301149e4f803b",
+        "name": "Hunter",
+        "star": 3,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Hunter",
+            "獵人"
+        ],
+        "combinationId": [
+            "9b07aab07b5fa3f77e5d1f86c9a43b97",
+            "51a547788c5ebad8e66b330b9fa747c5"
+        ],
+        "upgradeId": [
+            "6a81c47366143ba5f8a1c0b6ef9facd2",
+            "e682f6945ad12e536ef0b91fd96c3f85",
+            "7b28158d613ea1869441676fa32a3b5a"
+        ]
+    },
+    {
+        "id": "e60b65c860681c0a53fcded0e33fc6de",
+        "name": "Stinger",
+        "star": 3,
+        "class": "Archer",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Stinger",
+            "毒刺"
+        ],
+        "combinationId": [
+            "007be3acd5669d100711b13d79e23369",
+            "fe94f888001c39006b96f0fc39d689a6"
+        ],
+        "upgradeId": [
+            "eb1a435cd0d6cb4bee3f992ddd610d6d",
+            "ac38ecf12a909a72be9906c95493924e",
+            "95aa99a5810a35a3659d5322fe4bad00"
+        ]
+    },
+    {
+        "id": "074afeda56fb27564aeb1315be28036b",
+        "name": "Avenger",
+        "star": 3,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Defense",
+        "label": [
+            "Avenger",
+            "復仇者"
+        ],
+        "combinationId": [
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ],
+        "upgradeId": [
+            "e682f6945ad12e536ef0b91fd96c3f85",
+            "db7805775bded0ed2ffe82e2f5c4f2ac",
+            "d3d0d36fb7f7481a04ced3ef8ec2ac1a"
+        ]
+    },
+    {
+        "id": "121189969c46f49b8249633c2d5a7bfa",
+        "name": "Slayer",
+        "star": 3,
+        "class": "Rogue",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Slayer",
+            "殺手"
+        ],
+        "combinationId": [
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "fe94f888001c39006b96f0fc39d689a6"
+        ],
+        "upgradeId": [
+            "3ba04adc972c85828633a4360f54a515",
+            "df5bb61d683a56fb90df45d3d15b23b5",
+            "a7160888783b70519b2314c70956aeb9"
+        ]
+    },
+    {
+        "id": "3d7491a4536e8a468755c3c70a3c3016",
+        "name": "Samurai",
+        "star": 3,
+        "class": "Rogue",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Samurai",
+            "武士"
+        ],
+        "combinationId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ],
+        "upgradeId": [
+            "18ae50fdbead92c2d6a9f9317732014b",
+            "db7805775bded0ed2ffe82e2f5c4f2ac",
+            "d105b6d2d499afb698f12cc1a43657fe"
+        ]
+    },
+    {
+        "id": "53eff025ac07f0cedcd87efcd52b4b95",
+        "name": "Wonderer",
+        "star": 3,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Wonderer",
+            "流浪者"
+        ],
+        "combinationId": [
+            "39babca9e3d0ceda5051773a25fe2a4f",
+            "afb87b393d9c759e8a218b56d0f895e0"
+        ],
+        "upgradeId": [
+            "d3d0d36fb7f7481a04ced3ef8ec2ac1a",
+            "e4e28e54eecbb0efe7d77914e2949b5e",
+            "95aa99a5810a35a3659d5322fe4bad00"
+        ]
+    },
+    {
+        "id": "f64162c264d5679d130b6e8ae84d704e",
+        "name": "Invoker",
+        "star": 3,
+        "class": "Wizard",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Invoker",
+            "祈求者"
+        ],
+        "combinationId": [
+            "39babca9e3d0ceda5051773a25fe2a4f",
+            "738e8b6f710526ee635cbb7dbf4e8530"
+        ],
+        "upgradeId": [
+            "b619c0d9c0a9fd2b2841d95f156dc7a8",
+            "30162ed78b6c10f731411f2fc440c24f",
+            "b0c123c867b65084c362c8f3111c184d"
+        ]
+    },
+    {
+        "id": "21305b754e03843876abc27387a0e57e",
+        "name": "Warlock",
+        "star": 3,
+        "class": "Wizard",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Warlock",
+            "術士"
+        ],
+        "combinationId": [
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "39babca9e3d0ceda5051773a25fe2a4f"
+        ],
+        "upgradeId": [
+            "b619c0d9c0a9fd2b2841d95f156dc7a8",
+            "88d78cce1eece09d30b9fe477f0aec87",
+            "cba196fb53f7cac0bcb537359a232fc0"
+        ]
+    },
+    {
+        "id": "d17729a5c0334741f43b3fdc4c3a27ab",
+        "name": "Necromancer",
+        "star": 3,
+        "class": "Wizard",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Necromancer",
+            "死靈法師"
+        ],
+        "combinationId": [
+            "39babca9e3d0ceda5051773a25fe2a4f",
+            "578f6b829abd7b984a8465def59115cc"
+        ],
+        "upgradeId": [
+            "d105b6d2d499afb698f12cc1a43657fe",
+            "7b28158d613ea1869441676fa32a3b5a",
+            "cba196fb53f7cac0bcb537359a232fc0"
+        ]
+    },
+    {
+        "id": "e466ff6b7017bfcc62451718fb431f92",
+        "name": "Esper",
+        "star": 3,
+        "class": "Wizard",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Esper",
+            "超能力者"
+        ],
+        "combinationId": [
+            "9b07aab07b5fa3f77e5d1f86c9a43b97",
+            "578f6b829abd7b984a8465def59115cc"
+        ],
+        "upgradeId": [
+            "88d78cce1eece09d30b9fe477f0aec87",
+            "8045a0a6c688b0635e3caccc408a1446",
+            "21f2ceb6ad3ed93958a9653b63f1c6b3"
+        ]
+    },
+    {
+        "id": "246d4b1d4f9480e46c982d4111d95378",
+        "name": "Warden",
+        "star": 3,
+        "class": "Cleric",
+        "type": "Nature",
+        "role": "Defense",
+        "label": [
+            "Warden",
+            "守望者"
+        ],
+        "combinationId": [
+            "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+            "51a547788c5ebad8e66b330b9fa747c5"
+        ],
+        "upgradeId": [
+            "30162ed78b6c10f731411f2fc440c24f",
+            "a5ca8ed77981ef739b346e3fb0332e1b",
+            "0af3f80a54716414f24a166e5c1b6c26"
+        ]
+    },
+    {
+        "id": "8581ca1b40455a48b3f61e1de4a3cd11",
+        "name": "Minstrel",
+        "star": 3,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Minstrel",
+            "樂師"
+        ],
+        "combinationId": [
+            "e7b1c3af3203c42e8a5450beb229c09e",
+            "738e8b6f710526ee635cbb7dbf4e8530"
+        ],
+        "upgradeId": [
+            "18ae50fdbead92c2d6a9f9317732014b",
+            "3aa4584e547efba20238772d4af5c03d",
+            "2c0849d41dc4d8182184c88e267a5e47"
+        ]
+    },
+    {
+        "id": "e5ea56a64dedf72d7bfffbd4251d52bc",
+        "name": "Priest",
+        "star": 3,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Priest",
+            "修女"
+        ],
+        "combinationId": [
+            "88f6c01a3b5711ec2a896c9f5462497c",
+            "88f6c01a3b5711ec2a896c9f5462497c"
+        ],
+        "upgradeId": [
+            "cf00082fc7168929f6a90cb0ddd225d8",
+            "5b921cd5e97fcb7d4623a08365f7c5c6",
+            "3aa4584e547efba20238772d4af5c03d"
+        ]
+    },
+    {
+        "id": "52f4fd6e07de3462457acb096f3f4603",
+        "name": "Pilgrim",
+        "star": 3,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Pilgrim",
+            "朝聖者"
+        ],
+        "combinationId": [
+            "e7b1c3af3203c42e8a5450beb229c09e",
+            "9b07aab07b5fa3f77e5d1f86c9a43b97"
+        ],
+        "upgradeId": [
+            "2c0849d41dc4d8182184c88e267a5e47",
+            "26269474bc6e14f4f9449c36056d92d3",
+            "1829a8d3a1088a6d7a014156a6012520"
+        ]
+    },
+    {
+        "id": "5ee5ec9d8e6b181960c2be1df5f1ad81",
+        "name": "Berserker",
+        "star": 3,
+        "class": "Warrior",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Berserker",
+            "狂戰士"
+        ],
+        "combinationId": [
+            "e7b1c3af3203c42e8a5450beb229c09e",
+            "0a697cba19cd4c1974e2ee11a3c0b9c7"
+        ],
+        "upgradeId": [
+            "78435a4a17caa85d27282d81186f304d",
+            "a5ca8ed77981ef739b346e3fb0332e1b",
+            "1c749862591cbbc9e4609d7a10288f49"
+        ]
+    },
+    {
+        "id": "f92b36491af502e1a73ef7aa499211b0",
+        "name": "Gladiator",
+        "star": 3,
+        "class": "Warrior",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Gladiator",
+            "角鬥士"
+        ],
+        "combinationId": [
+            "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "844a2b0ce474227509eb629bc56c1359"
+        ],
+        "upgradeId": [
+            "f90034e6810bf57cdb3d99a298221fc9",
+            "3c18971605b1367c3d2ed6fda74be164",
+            "2f2d01c3f564d00cb36d4c75acaff280"
+        ]
+    },
+    {
+        "id": "5588cb8830fdb8ac7159b7cf5d1e611e",
+        "name": "Striker",
+        "star": 3,
+        "class": "Warrior",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Striker",
+            "武術家"
+        ],
+        "combinationId": [
+            "f4c17b587a99337e4f5a8e37cdb2a858",
+            "844a2b0ce474227509eb629bc56c1359"
+        ],
+        "upgradeId": [
+            "3c18971605b1367c3d2ed6fda74be164",
+            "e4e28e54eecbb0efe7d77914e2949b5e",
+            "4f4e9c93bf39b356f6ba5aa21f9d267d"
+        ]
+    },
+    {
+        "id": "19a1a8103bf352e6d8b22fa2e0620e54",
+        "name": "Rune Master",
+        "star": 3,
+        "class": "Warrior",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Rune Master",
+            "符文大師"
+        ],
+        "combinationId": [
+            "578f6b829abd7b984a8465def59115cc",
+            "844a2b0ce474227509eb629bc56c1359"
+        ],
+        "upgradeId": [
+            "4f4e9c93bf39b356f6ba5aa21f9d267d",
+            "f48a8f161502989fca609408a80bd754",
+            "b0c123c867b65084c362c8f3111c184d"
+        ]
+    },
+    {
+        "id": "95116ecd84c8e4e43c29629b68775bbd",
+        "name": "Rider",
+        "star": 3,
+        "class": "Lancer",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Rider",
+            "騎士"
+        ],
+        "combinationId": [
+            "76432ae42af38d2915538d6ee28f6971",
+            "25d6e85196930427863b83c573490d90"
+        ],
+        "upgradeId": [
+            "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+            "eada4723af6f51cf2391d85b5fde49b0",
+            "1829a8d3a1088a6d7a014156a6012520"
+        ]
+    },
+    {
+        "id": "b4e653c14a288889b7921ee46266806b",
+        "name": "Rampager",
+        "star": 3,
+        "class": "Lancer",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Rampager",
+            "狂暴槍士"
+        ],
+        "combinationId": [
+            "b3c5337f82b74066a2b6bcd7f63d9185",
+            "76432ae42af38d2915538d6ee28f6971"
+        ],
+        "upgradeId": [
+            "5b921cd5e97fcb7d4623a08365f7c5c6",
+            "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+            "21f2ceb6ad3ed93958a9653b63f1c6b3"
+        ]
+    },
+    {
+        "id": "2aaa3e8ae5da0cb963cd62087faf5566",
+        "name": "Maestro",
+        "star": 3,
+        "class": "Lancer",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Maestro",
+            "指揮家"
+        ],
+        "combinationId": [
+            "25d6e85196930427863b83c573490d90",
+            "e7b1c3af3203c42e8a5450beb229c09e"
+        ],
+        "upgradeId": [
+            "eada4723af6f51cf2391d85b5fde49b0",
+            "e1b3ec89ead7f83a9245ed5c9cacfdbf",
+            "b1923a56a86aa9c0a4a8d3d75d5e8a72"
+        ]
+    },
+    {
+        "id": "0f0a37f6d1c2f28437b034a6d76ee615",
+        "name": "Vagabond",
+        "star": 3,
+        "class": "Lancer",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Vagabond",
+            "浪人劍客"
+        ],
+        "combinationId": [
+            "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "25d6e85196930427863b83c573490d90"
+        ],
+        "upgradeId": [
+            "1ca33704c2ae22ce138fbe6b76a2ef16",
+            "3ba04adc972c85828633a4360f54a515",
+            "2f2d01c3f564d00cb36d4c75acaff280"
+        ]
+    },
+    {
+        "id": "b4b46e6ce2c563dd296e8bae768e1b9d",
+        "name": "Servant",
+        "star": 3,
+        "class": "Spirit",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Servant",
+            "使役魔"
+        ],
+        "combinationId": [
+            "738e8b6f710526ee635cbb7dbf4e8530",
+            "578f6b829abd7b984a8465def59115cc"
+        ],
+        "upgradeId": [
+            "8045a0a6c688b0635e3caccc408a1446",
+            "072a2f0b0133bb19c4904e51ddb2d075",
+            "72b29bce15cef1969d84e75dc460f003",
+            "1c749862591cbbc9e4609d7a10288f49"
+        ]
+    },
+    {
+        "id": "2de3fae2de050ff6934ac65713c99936",
+        "name": "High Spirit",
+        "star": 3,
+        "class": "Spirit",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "High Spirit",
+            "高階精靈"
+        ],
+        "combinationId": [
+            "ae4cccea87290717523772f7472e7f5e",
+            "ae4cccea87290717523772f7472e7f5e"
+        ],
+        "upgradeId": [
+            "5617d73c694ad8f8004009e0f6b2e3d6",
+            "b1923a56a86aa9c0a4a8d3d75d5e8a72",
+            "72b29bce15cef1969d84e75dc460f003",
+            "be19296ec8caa16086428364b4d8499c"
+        ]
+    },
+    {
+        "id": "953fc7678dcd1bd8726eb7be0e961744",
+        "name": "Whitesmith",
+        "star": 3,
+        "class": "Spirit",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Whitesmith",
+            "機械工匠"
+        ],
+        "combinationId": [
+            "844a2b0ce474227509eb629bc56c1359",
+            "fe94f888001c39006b96f0fc39d689a6"
+        ],
+        "upgradeId": [
+            "f90034e6810bf57cdb3d99a298221fc9",
+            "e1b3ec89ead7f83a9245ed5c9cacfdbf",
+            "072a2f0b0133bb19c4904e51ddb2d075"
+        ]
+    },
+    {
+        "id": "fad1fd24e1b72465ab5056777d82598e",
+        "name": "Nymph",
+        "star": 3,
+        "class": "Spirit",
+        "type": "Nature",
+        "role": "Support",
+        "label": [
+            "Nymph",
+            "寧芙"
+        ],
+        "combinationId": [
+            "738e8b6f710526ee635cbb7dbf4e8530",
+            "51a547788c5ebad8e66b330b9fa747c5"
+        ],
+        "upgradeId": [
+            "df5bb61d683a56fb90df45d3d15b23b5",
+            "ac38ecf12a909a72be9906c95493924e",
+            "26269474bc6e14f4f9449c36056d92d3"
+        ]
+    },
+    {
+        "id": "78435a4a17caa85d27282d81186f304d",
+        "name": "Death Knight",
+        "star": 4,
+        "class": "Swordsman",
+        "type": "Dark",
+        "role": "Defense",
+        "label": [
+            "Death Knight",
+            "死亡騎士"
+        ],
+        "combinationId": [
+            "dde107f2539783f6bab65e78a6047f4a",
+            "5ee5ec9d8e6b181960c2be1df5f1ad81"
+        ],
+        "upgradeId": [
+            "69ac9b6e3d2e769dc6abf2d4ca4108e3"
+        ]
+    },
+    {
+        "id": "93ad9bfa6d2aa9199ab848abc0ae1404",
+        "name": "Royal Guard",
+        "star": 4,
+        "class": "Swordsman",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Royal Guard",
+            "皇家首位"
+        ],
+        "combinationId": [
+            "e84733130b507e4221aac562ef7525ee",
+            "ee90445284a3f5eb04b08417e16ecb95"
+        ],
+        "upgradeId": [
+            "184d97e1a8e8130dfb0a41329b780c66",
+            "f7b36859b3165c1288274626ec9be548"
+        ]
+    },
+    {
+        "id": "41ec7654980ebb6941e79e942c3a3f0a",
+        "name": "Blade Singer",
+        "star": 4,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Blade Singer",
+            "劍詠者"
+        ],
+        "combinationId": [
+            "dde107f2539783f6bab65e78a6047f4a",
+            "e84733130b507e4221aac562ef7525ee"
+        ],
+        "upgradeId": [
+            "f7b36859b3165c1288274626ec9be548"
+        ]
+    },
+    {
+        "id": "1ca33704c2ae22ce138fbe6b76a2ef16",
+        "name": "Lunatic",
+        "star": 4,
+        "class": "Swordsman",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Lunatic",
+            "狂亂者"
+        ],
+        "combinationId": [
+            "be39f562e01b65e55bf0e2b03c085340",
+            "0f0a37f6d1c2f28437b034a6d76ee615"
+        ],
+        "upgradeId": [
+            "76dbe559f557d065613840d49fd0c7a8",
+            "2f0cf170ed4611767aebe03283c96e61"
+        ]
+    },
+    {
+        "id": "6a81c47366143ba5f8a1c0b6ef9facd2",
+        "name": "Wind Walker",
+        "star": 4,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Wind Walker",
+            "風行者"
+        ],
+        "combinationId": [
+            "71e79ef80600d398d90cfebe3b0b758d",
+            "5e409e09f43d85c6e61301149e4f803b"
+        ],
+        "upgradeId": [
+            "e5976fb498107a3c640413b1311a5ec8",
+            "92f9b70b0446c0e7599dcc25e9f55ea1"
+        ]
+    },
+    {
+        "id": "e682f6945ad12e536ef0b91fd96c3f85",
+        "name": "Arcane Archer",
+        "star": 4,
+        "class": "Archer",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Arcane Archer",
+            "魔射手"
+        ],
+        "combinationId": [
+            "074afeda56fb27564aeb1315be28036b",
+            "5e409e09f43d85c6e61301149e4f803b"
+        ],
+        "upgradeId": [
+            "e5976fb498107a3c640413b1311a5ec8",
+            "d52c415bc6e5ba7fcc4e756fa07a65b6"
+        ]
+    },
+    {
+        "id": "8875a6e498ff20b1553ff264e9b07a53",
+        "name": "Raven",
+        "star": 4,
+        "class": "Archer",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Raven",
+            "掠奪者"
+        ],
+        "combinationId": [
+            "71e79ef80600d398d90cfebe3b0b758d",
+            "b23f665210a1914cab61bc8eba4c9ae0"
+        ],
+        "upgradeId": [
+            "f059fdfd75e266e77ca83794582cd522"
+        ]
+    },
+    {
+        "id": "5ce8b65747cd41acd3f9b9636df9a84f",
+        "name": "Corsair",
+        "star": 4,
+        "class": "Archer",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Corsair",
+            "海軍司令"
+        ],
+        "combinationId": [
+            "b23f665210a1914cab61bc8eba4c9ae0",
+            "ee90445284a3f5eb04b08417e16ecb95"
+        ],
+        "upgradeId": [
+            "dc526452cd346ea11f29403129c77928",
+            "76dbe559f557d065613840d49fd0c7a8"
+        ]
+    },
+    {
+        "id": "eb1a435cd0d6cb4bee3f992ddd610d6d",
+        "name": "Ancient Bow",
+        "star": 4,
+        "class": "Archer",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Ancient Bow",
+            "上古射手"
+        ],
+        "combinationId": [
+            "71e79ef80600d398d90cfebe3b0b758d",
+            "e60b65c860681c0a53fcded0e33fc6de"
+        ],
+        "upgradeId": [
+            "f9f796348bc43067c7242ec4551cde69",
+            "d52c415bc6e5ba7fcc4e756fa07a65b6"
+        ]
+    },
+    {
+        "id": "18ae50fdbead92c2d6a9f9317732014b",
+        "name": "Trickster",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Support",
+        "label": [
+            "Trickster",
+            "小丑"
+        ],
+        "combinationId": [
+            "8581ca1b40455a48b3f61e1de4a3cd11",
+            "3d7491a4536e8a468755c3c70a3c3016"
+        ],
+        "upgradeId": [
+            "dc526452cd346ea11f29403129c77928",
+            "6273e23e7fd18dfe5662303bfbace347"
+        ]
+    },
+    {
+        "id": "db7805775bded0ed2ffe82e2f5c4f2ac",
+        "name": "High Assassin",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "High Assassin",
+            "高階刺客"
+        ],
+        "combinationId": [
+            "074afeda56fb27564aeb1315be28036b",
+            "3d7491a4536e8a468755c3c70a3c3016"
+        ],
+        "upgradeId": [
+            "6273e23e7fd18dfe5662303bfbace347",
+            "733bf0912ec6656188ffa062e598f26a"
+        ]
+    },
+    {
+        "id": "3ba04adc972c85828633a4360f54a515",
+        "name": "Dragon Slayer",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Fire",
+        "role": "Defense",
+        "label": [
+            "Dragon Slayer",
+            "屠龍者"
+        ],
+        "combinationId": [
+            "121189969c46f49b8249633c2d5a7bfa",
+            "0f0a37f6d1c2f28437b034a6d76ee615"
+        ],
+        "upgradeId": [
+            "77c998a0f5dd5327ba26595fb03add82"
+        ]
+    },
+    {
+        "id": "d3d0d36fb7f7481a04ced3ef8ec2ac1a",
+        "name": "Shadow Dancer",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Shadow Dancer",
+            "影舞者"
+        ],
+        "combinationId": [
+            "074afeda56fb27564aeb1315be28036b",
+            "53eff025ac07f0cedcd87efcd52b4b95"
+        ],
+        "upgradeId": [
+            "f059fdfd75e266e77ca83794582cd522",
+            "733bf0912ec6656188ffa062e598f26a"
+        ]
+    },
+    {
+        "id": "df5bb61d683a56fb90df45d3d15b23b5",
+        "name": "Osiris",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Osiris",
+            "歐西里斯"
+        ],
+        "combinationId": [
+            "121189969c46f49b8249633c2d5a7bfa",
+            "fad1fd24e1b72465ab5056777d82598e"
+        ],
+        "upgradeId": [
+            "ee8258b273d8353850836032e9d5daca",
+            "2f0cf170ed4611767aebe03283c96e61"
+        ]
+    },
+    {
+        "id": "b619c0d9c0a9fd2b2841d95f156dc7a8",
+        "name": "Archmage",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Fire",
+        "role": "Support",
+        "label": [
+            "Archmage",
+            "大魔法師"
+        ],
+        "combinationId": [
+            "f64162c264d5679d130b6e8ae84d704e",
+            "21305b754e03843876abc27387a0e57e"
+        ],
+        "upgradeId": [
+            "453f875a49681cf50d837cf2e7090f58"
+        ]
+    },
+    {
+        "id": "88d78cce1eece09d30b9fe477f0aec87",
+        "name": "Eldritch",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Eldritch",
+            "暗黑術士"
+        ],
+        "combinationId": [
+            "21305b754e03843876abc27387a0e57e",
+            "e466ff6b7017bfcc62451718fb431f92"
+        ],
+        "upgradeId": [
+            "453f875a49681cf50d837cf2e7090f58",
+            "69ac9b6e3d2e769dc6abf2d4ca4108e3"
+        ]
+    },
+    {
+        "id": "d105b6d2d499afb698f12cc1a43657fe",
+        "name": "Soul Eater",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Soul Eater",
+            "嗜魂者"
+        ],
+        "combinationId": [
+            "3d7491a4536e8a468755c3c70a3c3016",
+            "d17729a5c0334741f43b3fdc4c3a27ab"
+        ],
+        "upgradeId": [
+            "293dd5321cbf5b01e36489c09f0d92a5",
+            "de83eeebde5b8049c8256480c26a3901"
+        ]
+    },
+    {
+        "id": "7b28158d613ea1869441676fa32a3b5a",
+        "name": "Mystic",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Dark",
+        "role": "Support",
+        "label": [
+            "Mystic",
+            "秘術師"
+        ],
+        "combinationId": [
+            "5e409e09f43d85c6e61301149e4f803b",
+            "d17729a5c0334741f43b3fdc4c3a27ab"
+        ],
+        "upgradeId": [
+            "6f27626c36b5d87b047a5d9dd88606e5",
+            "cc009feba14880ad6c58615478213a63"
+        ]
+    },
+    {
+        "id": "8045a0a6c688b0635e3caccc408a1446",
+        "name": "Generic",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Iron",
+        "role": "Support",
+        "label": [
+            "Generic",
+            "炸彈客"
+        ],
+        "combinationId": [
+            "b4b46e6ce2c563dd296e8bae768e1b9d",
+            "e466ff6b7017bfcc62451718fb431f92"
+        ],
+        "upgradeId": [
+            "41ad87cfc159526f62529db61162a2a7",
+            "ad26f9b3bd9e52c68d21b805f38e3109"
+        ]
+    },
+    {
+        "id": "cba196fb53f7cac0bcb537359a232fc0",
+        "name": "Sibyl",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Sibyl",
+            "西貝拉"
+        ],
+        "combinationId": [
+            "21305b754e03843876abc27387a0e57e",
+            "d17729a5c0334741f43b3fdc4c3a27ab"
+        ],
+        "upgradeId": [
+            "41ad87cfc159526f62529db61162a2a7"
+        ]
+    },
+    {
+        "id": "cf00082fc7168929f6a90cb0ddd225d8",
+        "name": "Templar",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Templar",
+            "聖殿騎士"
+        ],
+        "combinationId": [
+            "ee90445284a3f5eb04b08417e16ecb95",
+            "e5ea56a64dedf72d7bfffbd4251d52bc"
+        ],
+        "upgradeId": [
+            "ca8576eec57410261a232447a65b84c3"
+        ]
+    },
+    {
+        "id": "30162ed78b6c10f731411f2fc440c24f",
+        "name": "Oracle",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Oracle",
+            "占星術師"
+        ],
+        "combinationId": [
+            "f64162c264d5679d130b6e8ae84d704e",
+            "246d4b1d4f9480e46c982d4111d95378"
+        ],
+        "upgradeId": [
+            "f896e96f5a6b204cc830d85bf58f9a76",
+            "92f9b70b0446c0e7599dcc25e9f55ea1"
+        ]
+    },
+    {
+        "id": "5b921cd5e97fcb7d4623a08365f7c5c6",
+        "name": "Dark Priest",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Dark",
+        "role": "Support",
+        "label": [
+            "Dark Priest",
+            "墮落修女"
+        ],
+        "combinationId": [
+            "b4e653c14a288889b7921ee46266806b",
+            "e5ea56a64dedf72d7bfffbd4251d52bc"
+        ],
+        "upgradeId": [
+            "293dd5321cbf5b01e36489c09f0d92a5",
+            "40b56b70f3c01aeb8c866df6d22c6277"
+        ]
+    },
+    {
+        "id": "3aa4584e547efba20238772d4af5c03d",
+        "name": "Bishop",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Bishop",
+            "主教"
+        ],
+        "combinationId": [
+            "8581ca1b40455a48b3f61e1de4a3cd11",
+            "e5ea56a64dedf72d7bfffbd4251d52bc"
+        ],
+        "upgradeId": [
+            "6f27626c36b5d87b047a5d9dd88606e5",
+            "f896e96f5a6b204cc830d85bf58f9a76"
+        ]
+    },
+    {
+        "id": "2c0849d41dc4d8182184c88e267a5e47",
+        "name": "Windcure",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Nature",
+        "role": "Support",
+        "label": [
+            "Windcure",
+            "風之治癒者"
+        ],
+        "combinationId": [
+            "8581ca1b40455a48b3f61e1de4a3cd11",
+            "52f4fd6e07de3462457acb096f3f4603"
+        ],
+        "upgradeId": [
+            "03f7154c70b0abdfdb71dbd392cd16f8",
+            "de83eeebde5b8049c8256480c26a3901"
+        ]
+    },
+    {
+        "id": "f90034e6810bf57cdb3d99a298221fc9",
+        "name": "Destroyer",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Ice",
+        "role": "Defense",
+        "label": [
+            "Destroyer",
+            "破壞者"
+        ],
+        "combinationId": [
+            "f92b36491af502e1a73ef7aa499211b0",
+            "953fc7678dcd1bd8726eb7be0e961744"
+        ],
+        "upgradeId": [
+            "9607f5bcc2c2ddbb6e2968080fc66cba",
+            "ee8258b273d8353850836032e9d5daca"
+        ]
+    },
+    {
+        "id": "3c18971605b1367c3d2ed6fda74be164",
+        "name": "Champion",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Champion",
+            "冠軍"
+        ],
+        "combinationId": [
+            "f92b36491af502e1a73ef7aa499211b0",
+            "5588cb8830fdb8ac7159b7cf5d1e611e"
+        ],
+        "upgradeId": [
+            "9607f5bcc2c2ddbb6e2968080fc66cba"
+        ]
+    },
+    {
+        "id": "a5ca8ed77981ef739b346e3fb0332e1b",
+        "name": "WarShaper",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Nature",
+        "role": "Defense",
+        "label": [
+            "WarShaper",
+            "獸人戰士"
+        ],
+        "combinationId": [
+            "246d4b1d4f9480e46c982d4111d95378",
+            "5ee5ec9d8e6b181960c2be1df5f1ad81"
+        ]
+    },
+    {
+        "id": "e4e28e54eecbb0efe7d77914e2949b5e",
+        "name": "Swashbuckler",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Swashbuckler",
+            "盜劍客"
+        ],
+        "combinationId": [
+            "5588cb8830fdb8ac7159b7cf5d1e611e",
+            "53eff025ac07f0cedcd87efcd52b4b95"
+        ],
+        "upgradeId": [
+            "ad26f9b3bd9e52c68d21b805f38e3109"
+        ]
+    },
+    {
+        "id": "4f4e9c93bf39b356f6ba5aa21f9d267d",
+        "name": "Savage",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Savage",
+            "野蠻人"
+        ],
+        "combinationId": [
+            "5588cb8830fdb8ac7159b7cf5d1e611e",
+            "19a1a8103bf352e6d8b22fa2e0620e54"
+        ],
+        "upgradeId": [
+            "77c998a0f5dd5327ba26595fb03add82",
+            "d75e0a285d059c4434cec9e7dff00ebf"
+        ]
+    },
+    {
+        "id": "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+        "name": "Fortress",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Fortress",
+            "守護者"
+        ],
+        "combinationId": [
+            "95116ecd84c8e4e43c29629b68775bbd",
+            "b4e653c14a288889b7921ee46266806b"
+        ],
+        "upgradeId": [
+            "0315c657c622958a77ea84942de125c3",
+            "cc009feba14880ad6c58615478213a63"
+        ]
+    },
+    {
+        "id": "2f2d01c3f564d00cb36d4c75acaff280",
+        "name": "Lightning Lord",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Lightning Lord",
+            "神聖三叉戟"
+        ],
+        "combinationId": [
+            "f92b36491af502e1a73ef7aa499211b0",
+            "0f0a37f6d1c2f28437b034a6d76ee615"
+        ],
+        "upgradeId": [
+            "0315c657c622958a77ea84942de125c3",
+            "38e5de4898ecc033c1919653a021308e"
+        ]
+    },
+    {
+        "id": "21f2ceb6ad3ed93958a9653b63f1c6b3",
+        "name": "Vanguard",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Dark",
+        "role": "Defense",
+        "label": [
+            "Vanguard",
+            "先鋒"
+        ],
+        "combinationId": [
+            "b4e653c14a288889b7921ee46266806b",
+            "e466ff6b7017bfcc62451718fb431f92"
+        ],
+        "upgradeId": [
+            "657bceceac9998794c21f018121895c3"
+        ]
+    },
+    {
+        "id": "eada4723af6f51cf2391d85b5fde49b0",
+        "name": "Ruler",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Nature",
+        "role": "Support",
+        "label": [
+            "Ruler",
+            "審判者"
+        ],
+        "combinationId": [
+            "95116ecd84c8e4e43c29629b68775bbd",
+            "2aaa3e8ae5da0cb963cd62087faf5566"
+        ],
+        "upgradeId": [
+            "a593b413d2ccde96846a047af6fc4091",
+            "38e5de4898ecc033c1919653a021308e"
+        ]
+    },
+    {
+        "id": "e1b3ec89ead7f83a9245ed5c9cacfdbf",
+        "name": "Operator",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Iron",
+        "role": "Support",
+        "label": [
+            "Operator",
+            "操作員"
+        ],
+        "combinationId": [
+            "2aaa3e8ae5da0cb963cd62087faf5566",
+            "953fc7678dcd1bd8726eb7be0e961744"
+        ],
+        "upgradeId": [
+            "657bceceac9998794c21f018121895c3",
+            "03f7154c70b0abdfdb71dbd392cd16f8"
+        ]
+    },
+    {
+        "id": "072a2f0b0133bb19c4904e51ddb2d075",
+        "name": "Exorcist",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Exorcist",
+            "驅魔師"
+        ],
+        "combinationId": [
+            "b4b46e6ce2c563dd296e8bae768e1b9d",
+            "953fc7678dcd1bd8726eb7be0e961744"
+        ],
+        "upgradeId": [
+            "f8cdf991ae77e084a684bea5243582d9",
+            "0bacda12b34fde47a7dccc02d806f90a"
+        ]
+    },
+    {
+        "id": "5617d73c694ad8f8004009e0f6b2e3d6",
+        "name": "Salamander",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Salamander",
+            "沙羅曼達"
+        ],
+        "combinationId": [
+            "e84733130b507e4221aac562ef7525ee",
+            "2de3fae2de050ff6934ac65713c99936"
+        ],
+        "upgradeId": [
+            "a593b413d2ccde96846a047af6fc4091",
+            "f9f796348bc43067c7242ec4551cde69"
+        ]
+    },
+    {
+        "id": "b1923a56a86aa9c0a4a8d3d75d5e8a72",
+        "name": "Undine",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Undine",
+            "溫蒂妮"
+        ],
+        "combinationId": [
+            "2de3fae2de050ff6934ac65713c99936",
+            "2aaa3e8ae5da0cb963cd62087faf5566"
+        ],
+        "upgradeId": [
+            "f8cdf991ae77e084a684bea5243582d9"
+        ]
+    },
+    {
+        "id": "72b29bce15cef1969d84e75dc460f003",
+        "name": "Sylph",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Sylph",
+            "西爾芙"
+        ],
+        "combinationId": [
+            "b4b46e6ce2c563dd296e8bae768e1b9d",
+            "2de3fae2de050ff6934ac65713c99936"
+        ],
+        "upgradeId": [
+            "0ccc2d6613b822ff773f4398370f29c8"
+        ]
+    },
+    {
+        "id": "1c749862591cbbc9e4609d7a10288f49",
+        "name": "Shade",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Shade",
+            "暗影"
+        ],
+        "combinationId": [
+            "5ee5ec9d8e6b181960c2be1df5f1ad81",
+            "b4b46e6ce2c563dd296e8bae768e1b9d"
+        ],
+        "upgradeId": [
+            "0ccc2d6613b822ff773f4398370f29c8",
+            "40b56b70f3c01aeb8c866df6d22c6277"
+        ]
+    },
+    {
+        "id": "184d97e1a8e8130dfb0a41329b780c66",
+        "name": "Dragoon",
+        "star": 5,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Defense",
+        "label": [
+            "Dragoon",
+            "龍騎士"
+        ],
+        "combinationId": [
+            "0af3f80a54716414f24a166e5c1b6c26",
+            "93ad9bfa6d2aa9199ab848abc0ae1404"
+        ]
+    },
+    {
+        "id": "f7b36859b3165c1288274626ec9be548",
+        "name": "Swordmaster",
+        "star": 5,
+        "class": "Swordsman",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Swordmaster",
+            "劍術大師"
+        ],
+        "combinationId": [
+            "93ad9bfa6d2aa9199ab848abc0ae1404",
+            "41ec7654980ebb6941e79e942c3a3f0a"
+        ]
+    },
+    {
+        "id": "e5976fb498107a3c640413b1311a5ec8",
+        "name": "Soul Bow",
+        "star": 5,
+        "class": "Archer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Soul Bow",
+            "靈魂射手"
+        ],
+        "combinationId": [
+            "6a81c47366143ba5f8a1c0b6ef9facd2",
+            "e682f6945ad12e536ef0b91fd96c3f85"
+        ]
+    },
+    {
+        "id": "f059fdfd75e266e77ca83794582cd522",
+        "name": "Dark Wanderer",
+        "star": 5,
+        "class": "Archer",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Dark Wanderer",
+            "暗黑流浪者"
+        ],
+        "combinationId": [
+            "8875a6e498ff20b1553ff264e9b07a53",
+            "d3d0d36fb7f7481a04ced3ef8ec2ac1a"
+        ]
+    },
+    {
+        "id": "dc526452cd346ea11f29403129c77928",
+        "name": "Falcon",
+        "star": 5,
+        "class": "Archer",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Falcon",
+            "獵鷹"
+        ],
+        "combinationId": [
+            "18ae50fdbead92c2d6a9f9317732014b",
+            "5ce8b65747cd41acd3f9b9636df9a84f"
+        ]
+    },
+    {
+        "id": "77c998a0f5dd5327ba26595fb03add82",
+        "name": "Bounty Hunter",
+        "star": 5,
+        "class": "Rogue",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Bounty Hunter",
+            "賞金獵人"
+        ],
+        "combinationId": [
+            "3ba04adc972c85828633a4360f54a515",
+            "4f4e9c93bf39b356f6ba5aa21f9d267d"
+        ]
+    },
+    {
+        "id": "6273e23e7fd18dfe5662303bfbace347",
+        "name": "Dervish",
+        "star": 5,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Dervish",
+            "狂舞僧"
+        ],
+        "combinationId": [
+            "18ae50fdbead92c2d6a9f9317732014b",
+            "db7805775bded0ed2ffe82e2f5c4f2ac"
+        ]
+    },
+    {
+        "id": "733bf0912ec6656188ffa062e598f26a",
+        "name": "Demon Shadow",
+        "star": 5,
+        "class": "Rogue",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Demon Shadow",
+            "護衛暗影"
+        ],
+        "combinationId": [
+            "db7805775bded0ed2ffe82e2f5c4f2ac",
+            "d3d0d36fb7f7481a04ced3ef8ec2ac1a"
+        ]
+    },
+    {
+        "id": "453f875a49681cf50d837cf2e7090f58",
+        "name": "Lord Mage",
+        "star": 5,
+        "class": "Wizard",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Lord Mage",
+            "首席大法師"
+        ],
+        "combinationId": [
+            "88d78cce1eece09d30b9fe477f0aec87",
+            "b619c0d9c0a9fd2b2841d95f156dc7a8"
+        ]
+    },
+    {
+        "id": "6f27626c36b5d87b047a5d9dd88606e5",
+        "name": "Sage",
+        "star": 5,
+        "class": "Wizard",
+        "type": "Nature",
+        "role": "Support",
+        "label": [
+            "Sage",
+            "賢者"
+        ],
+        "combinationId": [
+            "7b28158d613ea1869441676fa32a3b5a",
+            "3aa4584e547efba20238772d4af5c03d"
+        ]
+    },
+    {
+        "id": "41ad87cfc159526f62529db61162a2a7",
+        "name": "Vampire",
+        "star": 5,
+        "class": "Wizard",
+        "type": "Dark",
+        "role": "Support",
+        "label": [
+            "Vampire",
+            "吸血鬼"
+        ],
+        "combinationId": [
+            "8045a0a6c688b0635e3caccc408a1446",
+            "cba196fb53f7cac0bcb537359a232fc0"
+        ]
+    },
+    {
+        "id": "ca8576eec57410261a232447a65b84c3",
+        "name": "Beast Lord",
+        "star": 5,
+        "class": "Cleric",
+        "type": "Fire",
+        "role": "Support",
+        "label": [
+            "Beast Lord",
+            "至尊九尾狐"
+        ],
+        "combinationId": [
+            "cf00082fc7168929f6a90cb0ddd225d8",
+            "36b72f39ccceed92849d8bb56ade90e1"
+        ]
+    },
+    {
+        "id": "293dd5321cbf5b01e36489c09f0d92a5",
+        "name": "Dark Lord",
+        "star": 5,
+        "class": "Cleric",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Dark Lord",
+            "混沌宿主"
+        ],
+        "combinationId": [
+            "d105b6d2d499afb698f12cc1a43657fe",
+            "5b921cd5e97fcb7d4623a08365f7c5c6"
+        ]
+    },
+    {
+        "id": "d75e0a285d059c4434cec9e7dff00ebf",
+        "name": "Hellbringer",
+        "star": 5,
+        "class": "Warrior",
+        "type": "Ice",
+        "role": "Defense",
+        "label": [
+            "Hellbringer",
+            "地獄使者"
+        ],
+        "combinationId": [
+            "36b72f39ccceed92849d8bb56ade90e1",
+            "4f4e9c93bf39b356f6ba5aa21f9d267d"
+        ]
+    },
+    {
+        "id": "9607f5bcc2c2ddbb6e2968080fc66cba",
+        "name": "Godhand",
+        "star": 5,
+        "class": "Warrior",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Godhand",
+            "神之手"
+        ],
+        "combinationId": [
+            "f90034e6810bf57cdb3d99a298221fc9",
+            "3c18971605b1367c3d2ed6fda74be164"
+        ]
+    },
+    {
+        "id": "ee8258b273d8353850836032e9d5daca",
+        "name": "Dream Painter",
+        "star": 5,
+        "class": "Warrior",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Dream Painter",
+            "繪夢師"
+        ],
+        "combinationId": [
+            "f90034e6810bf57cdb3d99a298221fc9",
+            "df5bb61d683a56fb90df45d3d15b23b5"
+        ]
+    },
+    {
+        "id": "0315c657c622958a77ea84942de125c3",
+        "name": "Cavalier",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Cavalier",
+            "天空騎士"
+        ],
+        "combinationId": [
+            "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+            "2f2d01c3f564d00cb36d4c75acaff280"
+        ]
+    },
+    {
+        "id": "657bceceac9998794c21f018121895c3",
+        "name": "Durendal",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Dark",
+        "role": "Attack",
+        "label": [
+            "Durendal",
+            "迪朗達爾"
+        ],
+        "combinationId": [
+            "21f2ceb6ad3ed93958a9653b63f1c6b3",
+            "e1b3ec89ead7f83a9245ed5c9cacfdbf"
+        ]
+    },
+    {
+        "id": "03f7154c70b0abdfdb71dbd392cd16f8",
+        "name": "Holy Princess",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Light",
+        "role": "Defense",
+        "label": [
+            "Holy Princess",
+            "聖潔公主"
+        ],
+        "combinationId": [
+            "2c0849d41dc4d8182184c88e267a5e47",
+            "e1b3ec89ead7f83a9245ed5c9cacfdbf"
+        ]
+    },
+    {
+        "id": "cc009feba14880ad6c58615478213a63",
+        "name": "Soul Lancer",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Soul Lancer",
+            "靈魂槍術士"
+        ],
+        "combinationId": [
+            "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+            "7b28158d613ea1869441676fa32a3b5a"
+        ]
+    },
+    {
+        "id": "a593b413d2ccde96846a047af6fc4091",
+        "name": "Storm Spear",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Iron",
+        "role": "Attack",
+        "label": [
+            "Storm Spear",
+            "暴風長槍手"
+        ],
+        "combinationId": [
+            "eada4723af6f51cf2391d85b5fde49b0",
+            "5617d73c694ad8f8004009e0f6b2e3d6"
+        ]
+    },
+    {
+        "id": "f9f796348bc43067c7242ec4551cde69",
+        "name": "Ifrit",
+        "star": 5,
+        "class": "Spirit",
+        "type": "Fire",
+        "role": "Attack",
+        "label": [
+            "Ifrit",
+            "伊弗利特"
+        ],
+        "combinationId": [
+            "5617d73c694ad8f8004009e0f6b2e3d6",
+            "eb1a435cd0d6cb4bee3f992ddd610d6d"
+        ]
+    },
+    {
+        "id": "f8cdf991ae77e084a684bea5243582d9",
+        "name": "Elime",
+        "star": 5,
+        "class": "Spirit",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Elime",
+            "依萊恩"
+        ],
+        "combinationId": [
+            "072a2f0b0133bb19c4904e51ddb2d075",
+            "b1923a56a86aa9c0a4a8d3d75d5e8a72"
+        ]
+    },
+    {
+        "id": "0ccc2d6613b822ff773f4398370f29c8",
+        "name": "Sylphid",
+        "star": 5,
+        "class": "Spirit",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Sylphid",
+            "西爾芙德"
+        ],
+        "combinationId": [
+            "72b29bce15cef1969d84e75dc460f003",
+            "1c749862591cbbc9e4609d7a10288f49"
+        ]
+    },
+    {
+        "id": "0bacda12b34fde47a7dccc02d806f90a",
+        "name": "Liberator",
+        "star": 5,
+        "class": "Spirit",
+        "type": "Iron",
+        "role": "Defense",
+        "label": [
+            "Liberator",
+            "解放者"
+        ],
+        "combinationId": [
+            "0af3f80a54716414f24a166e5c1b6c26",
+            "072a2f0b0133bb19c4904e51ddb2d075"
+        ]
+    },
+    {
+        "id": "f48a8f161502989fca609408a80bd754",
+        "name": "Viking",
+        "star": 4,
+        "class": "Warrior",
+        "type": "Light",
+        "role": "TBD",
+        "label": [
+            "Viking",
+            "維京人"
+        ],
+        "combinationId": [
+            "be39f562e01b65e55bf0e2b03c085340",
+            "19a1a8103bf352e6d8b22fa2e0620e54"
+        ]
+    },
+    {
+        "id": "ac38ecf12a909a72be9906c95493924e",
+        "name": "Alchemist",
+        "star": 4,
+        "class": "Spirit",
+        "type": "Light",
+        "role": "TBD",
+        "label": [
+            "Alchemist",
+            "煉金術師"
+        ],
+        "combinationId": [
+            "e60b65c860681c0a53fcded0e33fc6de",
+            "fad1fd24e1b72465ab5056777d82598e"
+        ]
+    },
+    {
+        "id": "40b56b70f3c01aeb8c866df6d22c6277",
+        "name": "Erebos",
+        "star": 5,
+        "class": "Spirit",
+        "type": "Dark",
+        "role": "TBD",
+        "label": [
+            "Erebos",
+            "厄瑞彼斯"
+        ],
+        "combinationId": [
+            "5b921cd5e97fcb7d4623a08365f7c5c6",
+            "1c749862591cbbc9e4609d7a10288f49"
+        ]
+    },
+    {
+        "id": "b0c123c867b65084c362c8f3111c184d",
+        "name": "Dragon Shaman",
+        "star": 4,
+        "class": "Wizard",
+        "type": "Fire",
+        "role": "TBD",
+        "label": [
+            "Dragon Shaman",
+            "龍族女巫"
+        ],
+        "combinationId": [
+            "f64162c264d5679d130b6e8ae84d704e",
+            "19a1a8103bf352e6d8b22fa2e0620e54"
+        ]
+    },
+    {
+        "id": "be19296ec8caa16086428364b4d8499c",
+        "name": "Duelist",
+        "star": 4,
+        "class": "Swordman",
+        "type": "Ice",
+        "role": "TBD",
+        "label": [
+            "Duelist",
+            "決鬥者"
+        ],
+        "combinationId": [
+            "2de3fae2de050ff6934ac65713c99936",
+            "be39f562e01b65e55bf0e2b03c085340"
+        ]
+    },
+    {
+        "id": "95aa99a5810a35a3659d5322fe4bad00",
+        "name": "Pirate",
+        "star": 4,
+        "class": "Archer",
+        "type": "Ice",
+        "role": "TBD",
+        "label": [
+            "Pirate",
+            "海盜"
+        ],
+        "combinationId": [
+            "e60b65c860681c0a53fcded0e33fc6de",
+            "53eff025ac07f0cedcd87efcd52b4b95"
+        ]
+    },
+    {
+        "id": "d52c415bc6e5ba7fcc4e756fa07a65b6",
+        "name": "Desperado",
+        "star": 5,
+        "class": "Archer",
+        "type": "Fire",
+        "role": "TBD",
+        "label": [
+            "Desperado",
+            "亡命之徒"
+        ],
+        "combinationId": [
+            "e682f6945ad12e536ef0b91fd96c3f85",
+            "eb1a435cd0d6cb4bee3f992ddd610d6d"
+        ]
+    },
+    {
+        "id": "de83eeebde5b8049c8256480c26a3901",
+        "name": "Marionette",
+        "star": 5,
+        "class": "Wizard",
+        "type": "Fire",
+        "role": "TBD",
+        "label": [
+            "Marionette",
+            "操偶師"
+        ],
+        "combinationId": [
+            "d105b6d2d499afb698f12cc1a43657fe",
+            "2c0849d41dc4d8182184c88e267a5e47"
+        ]
+    },
+    {
+        "id": "ad26f9b3bd9e52c68d21b805f38e3109",
+        "name": "Mage Fist",
+        "star": 5,
+        "class": "Warrior",
+        "type": "Ice",
+        "role": "TBD",
+        "label": [
+            "Mage Fist",
+            "喵喵拳手"
+        ],
+        "combinationId": [
+            "8045a0a6c688b0635e3caccc408a1446",
+            "e4e28e54eecbb0efe7d77914e2949b5e"
+        ]
+    },
+    {
+        "id": "a7160888783b70519b2314c70956aeb9",
+        "name": "Snatcher",
+        "star": 4,
+        "class": "Rogue",
+        "type": "Nature",
+        "role": "TBD",
+        "label": [
+            "Snatcher",
+            "攔截者"
+        ],
+        "combinationId": [
+            "b23f665210a1914cab61bc8eba4c9ae0",
+            "121189969c46f49b8249633c2d5a7bfa"
+        ]
+    },
+    {
+        "id": "f896e96f5a6b204cc830d85bf58f9a76",
+        "name": "Archangel",
+        "star": 5,
+        "class": "Cleric",
+        "type": "Light",
+        "role": "Support",
+        "label": [
+            "Archangel",
+            "大天使"
+        ],
+        "combinationId": [
+            "30162ed78b6c10f731411f2fc440c24f",
+            "3aa4584e547efba20238772d4af5c03d"
+        ]
+    },
+    {
+        "id": "76dbe559f557d065613840d49fd0c7a8",
+        "name": "Avalon",
+        "star": 5,
+        "class": "Swordman",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Avalon",
+            "阿瓦隆"
+        ],
+        "combinationId": [
+            "1ca33704c2ae22ce138fbe6b76a2ef16",
+            "5ce8b65747cd41acd3f9b9636df9a84f"
+        ]
+    },
+    {
+        "id": "69ac9b6e3d2e769dc6abf2d4ca4108e3",
+        "name": "Black Valkyrie",
+        "star": 5,
+        "class": "Swordman",
+        "type": "Dark",
+        "role": "Defense",
+        "label": [
+            "Black Valkyrie",
+            "暗黑女武神"
+        ],
+        "combinationId": [
+            "78435a4a17caa85d27282d81186f304d",
+            "88d78cce1eece09d30b9fe477f0aec87"
+        ]
+    },
+    {
+        "id": "2f0cf170ed4611767aebe03283c96e61",
+        "name": "Lunar Blade",
+        "star": 5,
+        "class": "Rogue",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Lunar Blade",
+            "月光銀刃"
+        ],
+        "combinationId": [
+            "1ca33704c2ae22ce138fbe6b76a2ef16",
+            "df5bb61d683a56fb90df45d3d15b23b5"
+        ]
+    },
+    {
+        "id": "26269474bc6e14f4f9449c36056d92d3",
+        "name": "Saint",
+        "star": 4,
+        "class": "Cleric",
+        "type": "Ice",
+        "role": "Support",
+        "label": [
+            "Saint",
+            "聖徒"
+        ],
+        "combinationId": [
+            "52f4fd6e07de3462457acb096f3f4603",
+            "fad1fd24e1b72465ab5056777d82598e"
+        ]
+    },
+    {
+        "id": "1829a8d3a1088a6d7a014156a6012520",
+        "name": "Tamer",
+        "star": 4,
+        "class": "Lancer",
+        "type": "Ice",
+        "role": "Attack",
+        "label": [
+            "Tamer",
+            "訓獸師"
+        ],
+        "combinationId": [
+            "95116ecd84c8e4e43c29629b68775bbd",
+            "52f4fd6e07de3462457acb096f3f4603"
+        ]
+    },
+    {
+        "id": "0af3f80a54716414f24a166e5c1b6c26",
+        "name": "Valkyrie",
+        "star": 4,
+        "class": "Swordman",
+        "type": "Light",
+        "role": "Attack",
+        "label": [
+            "Valkyrie",
+            "女武神"
+        ],
+        "combinationId": [
+            "dde107f2539783f6bab65e78a6047f4a",
+            "246d4b1d4f9480e46c982d4111d95378"
+        ],
+        "upgradeId": [
+            "184d97e1a8e8130dfb0a41329b780c66",
+            "0bacda12b34fde47a7dccc02d806f90a"
+        ]
+    },
+    {
+        "id": "92f9b70b0446c0e7599dcc25e9f55ea1",
+        "name": "Venom Queen",
+        "star": 5,
+        "class": "Cleric",
+        "type": "Nature",
+        "role": "Attack",
+        "label": [
+            "Venom Queen",
+            "毒后"
+        ],
+        "combinationId": [
+            "6a81c47366143ba5f8a1c0b6ef9facd2",
+            "30162ed78b6c10f731411f2fc440c24f"
+        ]
+    },
+    {
+        "id": "38e5de4898ecc033c1919653a021308e",
+        "name": "War Lord",
+        "star": 5,
+        "class": "Lancer",
+        "type": "Iron",
+        "role": "Support",
+        "label": [
+            "War Lord",
+            "戰神\r\n"
+        ],
+        "combinationId": [
+            "2f2d01c3f564d00cb36d4c75acaff280",
+            "eada4723af6f51cf2391d85b5fde49b0"
+        ]
+    }
+]
