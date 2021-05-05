@@ -14,7 +14,7 @@ export class HeroItem{
   combinationNumber?: number;
 
 
-  constructor(hero:Hero) {
+  constructor(hero: Hero) {
     this.id = hero.id;
     this.name = hero.name;
     this.type = hero.type;

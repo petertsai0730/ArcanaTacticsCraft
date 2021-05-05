@@ -12,11 +12,10 @@ import { HeroesService } from 'src/app/services/heroes.service';
   styleUrls: ['./hero-list.component.scss']
 })
 export class HeroListComponent implements OnInit, OnDestroy {
-
   heroes$ = new BehaviorSubject<HeroItem[]>([]);
   destory$ = new Subject<void>();
 
-  //star
+  // star
   heroesByStar$ = new BehaviorSubject<Array<HeroItem[]>>([]);
 
   selectMode = false;
@@ -24,63 +23,68 @@ export class HeroListComponent implements OnInit, OnDestroy {
   constructor(
     private heroesService: HeroesService,
     private heroTypeSerive: HeroTypesService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.filterHeroesWithStar();
     this.getAllHeroes();
   }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.destory$.next();
     this.destory$.complete();
   }
 
-  getAllHeroes(){
+  getAllHeroes() {
     combineLatest([
       this.heroesService.heroes$.pipe(skip(1)),
       this.heroTypeSerive.heroTypes$.pipe(skip(1))
-    ]).pipe(
-      takeUntil(this.destory$),
-      map(([heroes, heroTypes]) => {
-        let heroItems = [];
-        for(let hero of heroes){
-          let heroItem = new HeroItem(hero);
-          heroItems.push(heroItem);
-        }
-        return heroItems;
-      })
-    ).subscribe(this.heroes$)
+    ])
+      .pipe(
+        takeUntil(this.destory$),
+        map(([heroes, heroTypes]) => {
+          const heroItems = [];
+          for (const hero of heroes) {
+            const heroItem = new HeroItem(hero);
+            heroItems.push(heroItem);
+          }
+          return heroItems;
+        })
+      )
+      .subscribe(this.heroes$);
 
     // this.heroes$.subscribe(res=> console.log(res));
   }
 
-  filterHeroesWithStar(){
-    this.heroes$.pipe(
-      takeUntil(this.destory$),
-      map(heroes => {
-        let heroesByStar = new Array<HeroItem[]>([],[],[],[],[]);
-        for(let hero of heroes){
-          heroesByStar[hero.star -1].push(hero);
-        }
-        return heroesByStar;
-      })
-    ).subscribe(this.heroesByStar$);
+  filterHeroesWithStar() {
+    this.heroes$
+      .pipe(
+        takeUntil(this.destory$),
+        map((heroes) => {
+          const heroesByStar = new Array<HeroItem[]>([], [], [], [], []);
+          for (const hero of heroes) {
+            heroesByStar[hero.star - 1].push(hero);
+          }
+          return heroesByStar;
+        })
+      )
+      .subscribe(this.heroesByStar$);
   }
 
-  selectedHeroItem(selectedHero: HeroItem){
-    if(this.selectMode && selectedHero.isSelected){
+  selectedHeroItem(selectedHero: HeroItem) {
+    if (this.selectMode && selectedHero.isSelected) {
       this.selectMode = false;
       this.resetHeroItemsActive();
       return;
     }
 
-    let activeHeroes = this.getCombinationHeroesList(selectedHero);
+    const activeHeroes = this.getCombinationHeroesList(selectedHero);
 
-    let heroes = this.heroes$.value;
-    for(let hero of heroes){
+    const heroes = this.heroes$.value;
+    for (const hero of heroes) {
       hero.isSelected = hero.id === selectedHero.id;
-      let count = activeHeroes.filter(aHeroId => aHeroId === hero.id).length;
+      const count = activeHeroes.filter((aHeroId) => aHeroId === hero.id)
+        .length;
       hero.active = count > 0;
       hero.combinationNumber = count;
     }
@@ -88,36 +92,39 @@ export class HeroListComponent implements OnInit, OnDestroy {
     this.heroes$.next(heroes);
   }
 
-  getCombinationHeroesList(hero: HeroItem){
-    let heroList = [];
+  getCombinationHeroesList(hero: HeroItem) {
+    const heroList = [];
     heroList.push(hero.id);
-    if(hero.combinationId && hero.combinationId.length > 0){
-      hero.combinationId.map(heroId => {
-        let combinationHero = this.heroes$.value.find(h => h.id === heroId);
-        if(combinationHero){
+    if (hero.combinationId && hero.combinationId.length > 0) {
+      hero.combinationId.map((heroId) => {
+        const combinationHero = this.heroes$.value.find((h) => h.id === heroId);
+        if (combinationHero) {
           heroList.push(...this.getCombinationHeroesList(combinationHero));
         }
-      })
+      });
     }
     return heroList;
   }
 
-  getUpdateHeroList(hero: HeroItem){
+  getUpdateHeroList(hero: HeroItem) {
     // let heroList = [];
     // let updateHeroes = this.heroes$.value.filter(hero => !!hero?.combinationId.find(heroId => heroId === hero.id));
     // heroList.push(...updateHeroes);
     // for(let uHero of updateHeroes){
-
     // }
   }
 
-  resetHeroItemsActive(){
-    let heroes = this.heroes$.value;
-    for(let hero of heroes){
+  resetHeroItemsActive() {
+    const heroes = this.heroes$.value;
+    for (const hero of heroes) {
       hero.isSelected = false;
       hero.active = true;
       hero.combinationNumber = 0;
     }
     this.heroes$.next(heroes);
+  }
+
+  importHeroes() {
+    this.heroesService.getHeroesRef();
   }
 }
