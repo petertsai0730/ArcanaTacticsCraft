@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
-import { Hero } from '../models/hero';
+import { Api } from '../_api/firebase.api';
+import { Hero } from '../_models/hero';
 
 @Injectable({
   providedIn: 'root'
@@ -11,18 +12,10 @@ import { Hero } from '../models/hero';
 export class HeroesService {
   heroes$ = new BehaviorSubject<Hero[]>([]);
 
-  constructor(private db: AngularFirestore, private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient, private api: Api) {}
 
-  getHeroes() {
-    return this.db
-      .collection('Testing/Data/Heroes')
-      .valueChanges({ idField: 'id' })
-      .pipe(
-        map((heroesFromDB: any) => {
-          heroesFromDB.map((heroFormDB) => new Hero(heroFormDB));
-          return heroesFromDB;
-        })
-      );
+  getHeroes(): Observable<Hero[]> {
+    return this.api.getHeroes();
   }
 
   getHeroesRef() {

@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BehaviorSubject, combineLatest, Subject } from 'rxjs';
 import { map, skip, takeUntil } from 'rxjs/operators';
-import { Hero } from 'src/app/models/hero';
-import { HeroItem } from 'src/app/models/heroItem.interface';
-import { HeroTypesService } from 'src/app/services/hero-types.service';
-import { HeroesService } from 'src/app/services/heroes.service';
+import { Hero } from 'src/app/_models/hero';
+import { HeroItem } from 'src/app/_interfaces/heroItem.interface';
+import { HeroTypesService } from 'src/app/_services/hero-types.service';
+import { HeroesService } from 'src/app/_services/heroes.service';
 
 @Component({
   selector: 'app-hero-list',

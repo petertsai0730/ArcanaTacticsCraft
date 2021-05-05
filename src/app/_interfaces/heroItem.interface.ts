@@ -1,6 +1,6 @@
-import { Hero } from "./hero";
+import { Hero } from '../_models/hero';
 
-export class HeroItem{
+export class HeroItem {
   id?: string;
   name: string;
   type: string;
@@ -12,7 +12,6 @@ export class HeroItem{
   isSelected?: boolean;
   active?: boolean;
   combinationNumber?: number;
-
 
   constructor(hero: Hero) {
     this.id = hero.id;
