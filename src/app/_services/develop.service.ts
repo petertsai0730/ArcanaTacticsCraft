@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { combineLatest, from } from 'rxjs';
 import { filter, map, switchMap } from 'rxjs/operators';
 import { Md5 } from 'ts-md5';
-import { Api } from '../_api/mock.api';
+import { Api } from '../_api/firebase.api';
 import { Status } from '../_enums/status.enum';
 import { Hero } from '../_models/hero';
 
@@ -17,31 +17,31 @@ export class DevelopService {
     return this.api.getHeroes();
   }
 
-  // importHeroesToDB() {
-  //   return this.getHeroesRef().pipe(
-  //     filter((res) => !!res),
-  //     map((ref) => {
-  //       const heroes = ref.split(';');
-  //       let newHeroes: Hero[] = [];
-  //       for (const hero of heroes) {
-  //         newHeroes.push(this.setupHeroInfo(hero.split(',')));
-  //       }
-  //       return this.setupHeroUpgrdeId(newHeroes);
-  //     }),
-  //     switchMap((heroes) => {
-  //       const heroesStream = heroes.map((hero) =>
-  //         from(this.api.createHero(hero))
-  //       );
-  //       return combineLatest([...heroesStream]);
-  //     }),
-  //     map((responds) =>
-  //       responds.filter((res) => res == Status.SUCCESS).length ===
-  //       responds.length
-  //         ? Status.SUCCESS
-  //         : Status.NOT_LOADED
-  //     )
-  //   );
-  // }
+  importHeroesToDB() {
+    return this.getHeroesRef().pipe(
+      filter((res) => !!res),
+      map((ref) => {
+        const heroes = ref.split(';');
+        let newHeroes: Hero[] = [];
+        for (const hero of heroes) {
+          newHeroes.push(this.setupHeroInfo(hero.split(',')));
+        }
+        return this.setupHeroUpgrdeId(newHeroes);
+      }),
+      switchMap((heroes) => {
+        const heroesStream = heroes.map((hero) =>
+          from(this.api.createHero(hero))
+        );
+        return combineLatest([...heroesStream]);
+      }),
+      map((responds) =>
+        responds.filter((res) => res == Status.SUCCESS).length ===
+        responds.length
+          ? Status.SUCCESS
+          : Status.NOT_LOADED
+      )
+    );
+  }
 
   private getHeroesRef() {
     return this.httpClient.get('/assets/docs/heroes-ref.txt', {
@@ -84,5 +84,10 @@ export class DevelopService {
       }
     }
     return heroes;
+  }
+
+  /** Heroes image */
+  getHeroImage(heroId: string) {
+    return this.api.getHeroImageUrl(heroId);
   }
 }

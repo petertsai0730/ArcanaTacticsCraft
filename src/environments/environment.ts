@@ -13,7 +13,8 @@ export const environment = {
     appId: '1:449470324638:web:25625d08fbfb26b3cf008f',
     measurementId: 'G-478YF9GGQ6'
   },
-  FIRESTORE_ROOT: 'DEV/DEV/'
+  FIRESTORE_ROOT: 'DEV/DEV/',
+  FIRESTORAGE_ROOT: '/ATC_images/'
 };
 
 /*

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { Status } from '../_enums/status.enum';
 import { ApiInterface } from '../_interfaces/api.interface';
 import { Hero } from '../_models/hero';
 
@@ -20,5 +21,11 @@ export class Api implements ApiInterface {
           return ref;
         })
       );
+  };
+
+  createHero = (hero: Hero) => {
+    return new Promise((resolve, reject) => {
+      return Status.SUCCESS;
+    });
   };
 }

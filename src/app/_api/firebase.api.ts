@@ -3,6 +3,8 @@ import {
   AngularFirestore,
   AngularFirestoreCollection
 } from '@angular/fire/firestore';
+import { AngularFireStorage } from '@angular/fire/storage';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Status } from '../_enums/status.enum';
@@ -13,7 +15,10 @@ import { Hero } from '../_models/hero';
   providedIn: 'root'
 })
 export class Api implements ApiInterface {
-  constructor(private angularFirestore: AngularFirestore) {}
+  constructor(
+    private angularFirestore: AngularFirestore,
+    private angularFireStorage: AngularFireStorage
+  ) {}
 
   private getCollection = <T>(
     collectionName: string
@@ -47,4 +52,10 @@ export class Api implements ApiInterface {
       .set(hero)
       .then(() => Status.SUCCESS);
   };
+
+  getHeroImageUrl(heroId: string): Observable<string> {
+    return this.angularFireStorage
+      .ref(environment.FIRESTORAGE_ROOT + heroId + '.png')
+      .getDownloadURL();
+  }
 }
