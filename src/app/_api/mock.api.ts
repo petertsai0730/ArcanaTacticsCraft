@@ -32,7 +32,7 @@ export class Api implements ApiInterface {
 
   getHeroImageUrl(heroId: string): Observable<string> {
     return new Observable((observer) => {
-      observer.next(`assets/images/heroes/${heroId}.png`);
+      observer.next(`/assets/images/heroes/${heroId}.png`);
     });
   }
 }

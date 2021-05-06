@@ -2,9 +2,24 @@
   <ng-container *ngFor="let heroByStar of heroesByStar$ | async">
     <div class="star-container" *ngIf="heroByStar.length > 0">
       <ng-container *ngFor="let hero of heroByStar">
-        <div class="hero-item" id="{{hero.type.toLowerCase()}}" [ngClass]="{'inactiveItem': !hero.active}" (click)="selectedHeroItem(hero)">
-          {{ hero.name }}
-          <span *ngIf="hero.combinationNumber && hero.combinationNumber > 1">X {{ hero.combinationNumber }}</span>
+        <div
+          class="hero-item"
+          id="{{ hero.type.toLowerCase() }}"
+          [ngClass]="{ inactiveItem: !hero.active }"
+          (click)="selectedHeroItem(hero)"
+        >
+          <div class="image-container">
+            <img class="hero-image" src="{{ hero.imageURL }}" />
+            <!-- <div
+              class="hero-image"
+              [ngStyle]="{ 'background-image': 'url(' + hero.imageURL + ')' }"
+            ></div> -->
+          </div>
+          <span>{{ hero.name }}</span>
+
+          <!-- <span *ngIf="hero.combinationNumber && hero.combinationNumber > 1"
+            >X {{ hero.combinationNumber }}</span
+          > -->
         </div>
       </ng-container>
     </div>

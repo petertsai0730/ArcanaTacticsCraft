@@ -1,6 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { BehaviorSubject, combineLatest, Subject } from 'rxjs';
-import { map, skip, takeUntil } from 'rxjs/operators';
+import {
+  BehaviorSubject,
+  combineLatest,
+  from,
+  Observable,
+  Subject
+} from 'rxjs';
+import { filter, map, skip, switchMap, takeUntil } from 'rxjs/operators';
 import { Hero } from 'src/app/_models/hero';
 import { HeroItem } from 'src/app/_interfaces/heroItem.interface';
 import { HeroTypesService } from 'src/app/_services/hero-types.service';
@@ -39,14 +45,20 @@ export class HeroListComponent implements OnInit, OnDestroy {
   getAllHeroes() {
     combineLatest([
       this.heroesService.heroes$.pipe(skip(1)),
-      this.heroTypeSerive.heroTypes$.pipe(skip(1))
+      this.heroTypeSerive.heroTypes$.pipe(skip(1)),
+      this.getHeroesImageUrl()
     ])
       .pipe(
         takeUntil(this.destory$),
-        map(([heroes, heroTypes]) => {
+        filter(
+          ([heroes, heroTypes, heroesImageMap]) =>
+            heroes.length > 0 && heroesImageMap.size > 0
+        ),
+        map(([heroes, heroTypes, heroesImageMap]) => {
           const heroItems = [];
           for (const hero of heroes) {
-            const heroItem = new HeroItem(hero);
+            let url = heroesImageMap.get(hero.id);
+            let heroItem = new HeroItem(hero, url);
             heroItems.push(heroItem);
             this.heroMap.set(heroItem.id, heroItem);
           }
@@ -55,7 +67,32 @@ export class HeroListComponent implements OnInit, OnDestroy {
       )
       .subscribe(this.heroes$);
 
-    this.heroesService.heroes$.subscribe((res) => console.log(res));
+    // this.heroesService.heroes$.subscribe((res) => console.log(res));
+  }
+
+  getHeroesImageUrl(): Observable<Map<string, string>> {
+    return this.heroesService.heroes$.pipe(
+      skip(1),
+      switchMap((heroes: Hero[]) => {
+        const heroesImageStream = heroes.map((hero) => {
+          return this.heroesService.getHeroImageURL(hero.id).pipe(
+            map((url) => {
+              let obj = {
+                id: hero.id,
+                url: url
+              };
+              return obj;
+            })
+          );
+        });
+        return combineLatest([...heroesImageStream]);
+      }),
+      map((heroesImage) => {
+        return new Map(
+          heroesImage.map((heroImage) => [heroImage.id, heroImage.url])
+        );
+      })
+    );
   }
 
   filterHeroesWithStar() {
@@ -73,6 +110,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
       .subscribe(this.heroesByStar$);
   }
 
+  /** seleted hero and active combination and upgrade heroes */
   selectedHeroItem(selectedHero: HeroItem) {
     if (this.selectMode && selectedHero.isSelected) {
       this.selectMode = false;

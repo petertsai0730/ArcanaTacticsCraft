@@ -18,4 +18,8 @@ export class HeroesService {
   getHeroes(): Observable<Hero[]> {
     return this.api.getHeroes();
   }
+
+  getHeroImageURL(heroId: string): Observable<string> {
+    return this.api.getHeroImageUrl(heroId);
+  }
 }

@@ -7,7 +7,9 @@ export class HeroItem {
   class: string;
   star: number;
   combinationId?: string[];
+
   color?: string;
+  imageURL?: string;
   displayImage?: boolean;
   isSelected?: boolean;
   active?: boolean;
@@ -15,7 +17,7 @@ export class HeroItem {
   upgradeId?: string[];
   label?: string[];
 
-  constructor(hero: Hero) {
+  constructor(hero: Hero, imageURL?: string) {
     this.id = hero.id;
     this.name = hero.name;
     this.type = hero.type;
@@ -25,5 +27,6 @@ export class HeroItem {
     this.upgradeId = hero.upgradeId;
     this.label = hero.label;
     this.active = true;
+    this.imageURL = imageURL ? imageURL : null;
   }
 }
