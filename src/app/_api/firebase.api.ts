@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 import { Status } from '../_enums/status.enum';
 import { ApiInterface } from '../_interfaces/api.interface';
 import { Hero } from '../_models/hero';
+import { HeroClasses } from '../_models/heroClasses';
 
 @Injectable({
   providedIn: 'root'
@@ -55,7 +56,26 @@ export class Api implements ApiInterface {
 
   getHeroImageUrl(heroId: string): Observable<string> {
     return this.angularFireStorage
-      .ref(environment.FIRESTORAGE_ROOT + heroId + '.png')
+      .ref(environment.FIRESTORAGE_ROOT + 'heroes/' + heroId + '.png')
       .getDownloadURL();
+  }
+
+  getHeroClasses = () => {
+    return this.getCollection<HeroClasses>('classes')
+      .valueChanges({ idField: 'id' })
+      .pipe(
+        map((heroClassesFromDB: any) => {
+          let heroClasses: HeroClasses[] = heroClassesFromDB.map(
+            (heroClass) => new HeroClasses(heroClass)
+          );
+          return heroClasses;
+        })
+      );
+  };
+
+  getHeroClassesImageURL() {
+    return this.angularFireStorage.ref(
+      environment.FIRESTORAGE_ROOT + 'classes/'
+    );
   }
 }

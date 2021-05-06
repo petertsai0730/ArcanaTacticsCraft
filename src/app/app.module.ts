@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroListComponent } from './pages/hero-list/hero-list.component';
 import { NavComponent } from './nav/nav.component';
 import { DevelopComponent } from './pages/develop/develop.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DevelopComponent } from './pages/develop/develop.component';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

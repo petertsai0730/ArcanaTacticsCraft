@@ -85,9 +85,4 @@ export class DevelopService {
     }
     return heroes;
   }
-
-  /** Heroes image */
-  getHeroImage(heroId: string) {
-    return this.api.getHeroImageUrl(heroId);
-  }
 }
