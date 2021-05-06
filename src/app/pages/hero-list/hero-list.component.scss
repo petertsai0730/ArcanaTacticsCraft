@@ -1,24 +1,46 @@
 
 
 .hero-item{
-  width: 150px;
+  width: 180px;
+  aspect-ratio: 10/3;
+  position: relative;
   font-size: 16px;
   line-height: 25px;
-  border: solid 0.5px gray;
+  border: solid 4px rgba(235, 231, 231, 0.7);
   border-radius: 80px;
   margin: 8px;
-  padding-left: 5px;
-  color: white;
+  user-select: none;
 
-  .image-container{
-    width: 150px;
-    position: relative;
-    display: inline-block;
+  .image-sizer{
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    bottom: 0;
+    right: 0;
+    left: -2%;
 
-    .hero-image{
-      width: 100%;
-      object-fit: contain;
+    .image-container{
+      height: 100%;
+      position: relative;
+      display: inline-block;
+
+      .hero-image{
+        height: 100%;
+        object-fit: contain;
+      }
     }
+  }
+
+  .hero-name{
+    font-size: 20px;
+    position: absolute;
+    left: 35%;
+    top: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   &:hover{
@@ -26,8 +48,17 @@
   }
 }
 
+.selected-heroItem{
+  border: solid 4px rgba(230, 144, 16, 0.7);
+}
+
 .inactiveItem{
-  opacity: 0.4;
+  opacity: 0.3;
+}
+
+:host{
+  background-color: rgba(235, 231, 231, 0.2);
+
 }
 
 .hero-list-container{

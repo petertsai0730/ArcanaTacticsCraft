@@ -5,17 +5,18 @@
         <div
           class="hero-item"
           id="{{ hero.type.toLowerCase() }}"
-          [ngClass]="{ inactiveItem: !hero.active }"
+          [ngClass]="{
+            inactiveItem: !hero.active,
+            'selected-heroItem': hero.isSelected
+          }"
           (click)="selectedHeroItem(hero)"
         >
-          <div class="image-container">
-            <img class="hero-image" src="{{ hero.imageURL }}" />
-            <!-- <div
-              class="hero-image"
-              [ngStyle]="{ 'background-image': 'url(' + hero.imageURL + ')' }"
-            ></div> -->
+          <div class="image-sizer">
+            <div class="image-container">
+              <img class="hero-image" src="{{ hero.imageURL }}" />
+            </div>
           </div>
-          <span>{{ hero.name }}</span>
+          <div class="hero-name">{{ hero.label[1] }}</div>
 
           <!-- <span *ngIf="hero.combinationNumber && hero.combinationNumber > 1"
             >X {{ hero.combinationNumber }}</span
