@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { combineLatest, from } from 'rxjs';
 import { filter, map, switchMap } from 'rxjs/operators';
 import { Md5 } from 'ts-md5';
-import { Api } from '../_api/firebase.api';
+import { Api } from '../_api/mock.api';
 import { Status } from '../_enums/status.enum';
 import { Hero } from '../_models/hero';
 

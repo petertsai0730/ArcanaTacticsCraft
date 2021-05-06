@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Status } from '../_enums/status.enum';
 import { ApiInterface } from '../_interfaces/api.interface';
@@ -28,4 +29,10 @@ export class Api implements ApiInterface {
       return Status.SUCCESS;
     });
   };
+
+  getHeroImageUrl(heroId: string): Observable<string> {
+    return new Observable((observer) => {
+      observer.next(`assets/images/heroes/${heroId}.png`);
+    });
+  }
 }
