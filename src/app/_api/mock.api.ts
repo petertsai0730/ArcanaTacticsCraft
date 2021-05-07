@@ -50,7 +50,12 @@ export class Api implements ApiInterface {
     });
   }
 
-  getHeroClasses() {
+  getHeroClasses(): Observable<HeroClasses[]> {
     return this.heroClasses$;
+  }
+  getHeroClassImageURL(className: string): Observable<string> {
+    return new Observable((observer) => {
+      observer.next(`/assets/images/classes/class_${className}.png`);
+    });
   }
 }

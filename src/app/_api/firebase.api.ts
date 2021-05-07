@@ -73,9 +73,9 @@ export class Api implements ApiInterface {
       );
   }
 
-  getHeroClassesImageURL() {
-    return this.angularFireStorage.ref(
-      environment.FIRESTORAGE_ROOT + 'classes/'
-    );
+  getHeroClassImageURL(className: string): Observable<string> {
+    return this.angularFireStorage
+      .ref(`${environment.FIRESTORAGE_ROOT}classes/class_${className}.png`)
+      .getDownloadURL();
   }
 }

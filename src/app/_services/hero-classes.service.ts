@@ -14,4 +14,8 @@ export class HeroClassesService {
   getHeroClasses(): Observable<HeroClasses[]> {
     return this.api.getHeroClasses();
   }
+
+  getHeroClassesImageURL(className: string): Observable<string> {
+    return this.api.getHeroClassImageURL(className);
+  }
 }

@@ -8,5 +8,6 @@ export interface ApiInterface {
   updateHero?: (hero: Hero) => Promise<any>;
   createHero?: (hero: Hero) => Promise<any>;
   getHeroImageUrl?: (heroId: string) => Observable<string>;
-  getHeroClasses: () => Observable<HeroClasses[]>;
+  getHeroClasses: (className: string) => Observable<HeroClasses[]>;
+  getHeroClassImageURL: (className: string) => Observable<string>;
 }

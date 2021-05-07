@@ -6,6 +6,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { NavComponent } from '../nav/nav.component';
 import { DevelopComponent } from './develop/develop.component';
 import { HeroesFilterComponent } from './hero-list/heroes-filter/heroes-filter.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { HeroesFilterComponent } from './hero-list/heroes-filter/heroes-filter.c
     DevelopComponent,
     HeroesFilterComponent
   ],
-  imports: [CommonModule, PagesRoutingModule],
+  imports: [CommonModule, SharedModule, PagesRoutingModule],
   exports: [
     HeroListComponent,
     NavComponent,

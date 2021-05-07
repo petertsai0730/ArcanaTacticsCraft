@@ -1,1 +1,12 @@
-<p>heroes-filter works!</p>
+<div class="filter-container">
+  <div class="hero-classes">
+    <mat-button-toggle-group>
+      <mat-button-toggle
+        *ngFor="let heroClass of heroClasses$ | async"
+        value="{{ heroClass.name }}"
+      >
+        <img src="{{ heroClass.imageURL }}" />
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</div>
