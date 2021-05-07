@@ -1,3 +1,5 @@
+<app-heroes-filter></app-heroes-filter>
+
 <div class="hero-list-container">
   <ng-container *ngFor="let heroByStar of heroesByStar$ | async">
     <div class="star-container" *ngIf="heroByStar.length > 0">

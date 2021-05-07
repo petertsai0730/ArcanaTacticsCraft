@@ -4,8 +4,18 @@
   display: grid;
   grid-template-rows: 80px 1fr;
   margin: 0 !important;
+  height: 100%;
+
+  overflow: hidden;
 
   app-nav{
     background-color: blue;
+  }
+
+  .content{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex: 1 1 500px;
   }
 }

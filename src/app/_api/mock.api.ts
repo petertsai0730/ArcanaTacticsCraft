@@ -50,7 +50,7 @@ export class Api implements ApiInterface {
     });
   }
 
-  getHeroClasses = () => {
+  getHeroClasses() {
     return this.heroClasses$;
-  };
+  }
 }

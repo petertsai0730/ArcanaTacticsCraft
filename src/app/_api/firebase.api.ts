@@ -60,7 +60,7 @@ export class Api implements ApiInterface {
       .getDownloadURL();
   }
 
-  getHeroClasses = () => {
+  getHeroClasses() {
     return this.getCollection<HeroClasses>('classes')
       .valueChanges({ idField: 'id' })
       .pipe(
@@ -71,7 +71,7 @@ export class Api implements ApiInterface {
           return heroClasses;
         })
       );
-  };
+  }
 
   getHeroClassesImageURL() {
     return this.angularFireStorage.ref(

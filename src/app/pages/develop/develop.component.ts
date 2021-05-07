@@ -12,9 +12,7 @@ export class DevelopComponent implements OnInit {
 
   constructor(private developService: DevelopService) {}
 
-  ngOnInit() {
-    this.getHeroImage();
-  }
+  ngOnInit() {}
 
   importHeroes() {
     // this.developService.importHeroesToDB().subscribe((res) => console.log(res));
@@ -24,14 +22,5 @@ export class DevelopComponent implements OnInit {
     this.developService.getHeroes().subscribe((res) => {
       console.log(res);
     });
-  }
-
-  getHeroImage() {
-    this.developService
-      .getHeroImage(Md5.hashStr('Wizard').toString())
-      .subscribe((res) => {
-        this.img = res;
-        console.log(res);
-      });
   }
 }

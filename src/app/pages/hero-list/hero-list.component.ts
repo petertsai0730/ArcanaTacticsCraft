@@ -20,6 +20,7 @@ import { HeroesService } from 'src/app/_services/heroes.service';
 export class HeroListComponent implements OnInit, OnDestroy {
   heroes$ = new BehaviorSubject<HeroItem[]>([]);
   destory$ = new Subject<void>();
+  load$ = new Subject<void>();
 
   // hero
   heroesByStar$ = new BehaviorSubject<Array<HeroItem[]>>([]);
@@ -35,6 +36,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.filterHeroesWithStar();
     this.getAllHeroes();
+    this.load$.next();
   }
 
   ngOnDestroy() {
@@ -44,9 +46,10 @@ export class HeroListComponent implements OnInit, OnDestroy {
 
   getAllHeroes() {
     combineLatest([
-      this.heroesService.heroes$.pipe(skip(1)),
-      this.heroTypeSerive.heroTypes$.pipe(skip(1)),
-      this.getHeroesImageUrl()
+      this.heroesService.heroes$,
+      this.heroTypeSerive.heroTypes$,
+      this.getHeroesImageUrl(),
+      this.load$
     ])
       .pipe(
         takeUntil(this.destory$),

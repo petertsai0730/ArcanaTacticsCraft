@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Api } from '../_api/mock.api';
 import { HeroClasses } from '../_models/heroClasses';
 
@@ -7,6 +7,8 @@ import { HeroClasses } from '../_models/heroClasses';
   providedIn: 'root'
 })
 export class HeroClassesService {
+  heroClasses$ = new BehaviorSubject<HeroClasses[]>([]);
+
   constructor(private api: Api) {}
 
   getHeroClasses(): Observable<HeroClasses[]> {
