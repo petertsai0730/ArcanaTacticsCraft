@@ -11,6 +11,8 @@ import { Hero } from 'src/app/_models/hero';
 import { HeroItem } from 'src/app/_interfaces/heroItem.interface';
 import { HeroTypesService } from 'src/app/_services/hero-types.service';
 import { HeroesService } from 'src/app/_services/heroes.service';
+import { HeroClassesService } from 'src/app/_services/hero-classes.service';
+import { HeroClasses } from 'src/app/_models/heroClasses';
 
 @Component({
   selector: 'app-hero-list',
@@ -25,17 +27,20 @@ export class HeroListComponent implements OnInit, OnDestroy {
   // hero
   heroesByStar$ = new BehaviorSubject<Array<HeroItem[]>>([]);
   heroMap = new Map<string, HeroItem>();
+  heroClassImageMap = new Map<string, string>();
 
   selectMode = false;
 
   constructor(
     private heroesService: HeroesService,
-    private heroTypeSerive: HeroTypesService
+    private heroTypeSerive: HeroTypesService,
+    private heroClassesService: HeroClassesService
   ) {}
 
   ngOnInit() {
     this.filterHeroesWithStar();
     this.getAllHeroes();
+    this.getHeroClassesImage();
     this.load$.next();
   }
 
@@ -96,6 +101,44 @@ export class HeroListComponent implements OnInit, OnDestroy {
         );
       })
     );
+  }
+
+  getHeroClassesImage() {
+    this.heroClassesService
+      .getHeroClasses()
+      .pipe(
+        switchMap((classes: HeroClasses[]) => {
+          const heroClassesImageStream = classes.map(
+            (heroClass: HeroClasses) => {
+              return this.heroClassesService
+                .getHeroClassesImageURL(heroClass.name)
+                .pipe(
+                  map((url) => {
+                    let obj = {
+                      id: heroClass.id,
+                      name: heroClass.name,
+                      imageURL: url
+                    };
+                    return obj;
+                  })
+                );
+            }
+          );
+          return combineLatest([...heroClassesImageStream]);
+        }),
+        map((heroClassImage) => {
+          return new Map(
+            heroClassImage.map((heroClassImage) => [
+              heroClassImage.name,
+              heroClassImage.imageURL
+            ])
+          );
+        })
+      )
+      .subscribe((heroClassImageMap) => {
+        this.heroClassImageMap = heroClassImageMap;
+        console.log(this.heroClassImageMap);
+      });
   }
 
   filterHeroesWithStar() {
@@ -190,5 +233,9 @@ export class HeroListComponent implements OnInit, OnDestroy {
       hero.combinationNumber = 0;
     }
     this.heroes$.next(heroes);
+  }
+
+  private getHeroClassImageURL(heroClass: string) {
+    return this.heroClassImageMap.get(heroClass);
   }
 }

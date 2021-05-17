@@ -1,4 +1,9 @@
 
 .filter-container{
   margin: 24px;
+
+  mat-button-toggle{
+    display: flex;
+    align-items: center;
+  }
 }

@@ -13,13 +13,18 @@
           }"
           (click)="selectedHeroItem(hero)"
         >
-          <div class="image-sizer">
+          <div class="image-sizer hero-image">
             <div class="image-container">
-              <img class="hero-image" src="{{ hero.imageURL }}" />
+              <img class="image" src="{{ hero.imageURL }}" />
             </div>
           </div>
           <div class="hero-name">{{ hero.label[1] }}</div>
 
+          <div class="image-sizer hero-class-image">
+            <div class="image-container">
+              <img class="image" src="{{ getHeroClassImageURL(hero.class) }}" />
+            </div>
+          </div>
           <!-- <span *ngIf="hero.combinationNumber && hero.combinationNumber > 1"
             >X {{ hero.combinationNumber }}</span
           > -->

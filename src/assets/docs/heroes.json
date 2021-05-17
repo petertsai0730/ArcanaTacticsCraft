@@ -2142,7 +2142,7 @@
         ],
         "combinationId": [
             "cf00082fc7168929f6a90cb0ddd225d8",
-            "36b72f39ccceed92849d8bb56ade90e1"
+            "a5ca8ed77981ef739b346e3fb0332e1b"
         ]
     },
     {
@@ -2173,7 +2173,7 @@
             "地獄使者"
         ],
         "combinationId": [
-            "36b72f39ccceed92849d8bb56ade90e1",
+            "a5ca8ed77981ef739b346e3fb0332e1b",
             "4f4e9c93bf39b356f6ba5aa21f9d267d"
         ]
     },
@@ -2421,7 +2421,7 @@
         "id": "be19296ec8caa16086428364b4d8499c",
         "name": "Duelist",
         "star": 4,
-        "class": "Swordman",
+        "class": "Swordsman",
         "type": "Ice",
         "role": "TBD",
         "label": [
@@ -2533,7 +2533,7 @@
         "id": "76dbe559f557d065613840d49fd0c7a8",
         "name": "Avalon",
         "star": 5,
-        "class": "Swordman",
+        "class": "Swordsman",
         "type": "Ice",
         "role": "Attack",
         "label": [
@@ -2549,7 +2549,7 @@
         "id": "69ac9b6e3d2e769dc6abf2d4ca4108e3",
         "name": "Black Valkyrie",
         "star": 5,
-        "class": "Swordman",
+        "class": "Swordsman",
         "type": "Dark",
         "role": "Defense",
         "label": [
@@ -2613,7 +2613,7 @@
         "id": "0af3f80a54716414f24a166e5c1b6c26",
         "name": "Valkyrie",
         "star": 4,
-        "class": "Swordman",
+        "class": "Swordsman",
         "type": "Light",
         "role": "Attack",
         "label": [
