@@ -1,9 +1,19 @@
 
 .filter-container{
+  display: flex;
+  flex-direction: row;
   margin: 24px;
 
   mat-button-toggle{
     display: flex;
     align-items: center;
+
+    img{
+      height: 50px;
+    }
+  }
+
+  .group:not(:last-child){
+    margin-right: 16px;
   }
 }

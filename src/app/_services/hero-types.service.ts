@@ -3,6 +3,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HeroType } from '../_models/heroType';
+import { Api } from '../_api/mock.api';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { HeroType } from '../_models/heroType';
 export class HeroTypesService {
   heroTypes$ = new BehaviorSubject<HeroType[]>([]);
 
-  constructor(private db: AngularFirestore) {}
+  constructor(private db: AngularFirestore, private api: Api) {}
 
   getHeroType(): Observable<HeroType[]> {
     return this.db
@@ -22,5 +23,9 @@ export class HeroTypesService {
           return heroTypesFormDB;
         })
       );
+  }
+
+  getHeroTypeImageURL(typeName: string): Observable<string> {
+    return this.api.getHeroTypeImageURL(typeName);
   }
 }

@@ -1,11 +1,33 @@
 <div class="filter-container">
-  <div class="hero-classes">
-    <mat-button-toggle-group>
+  <div class="hero-classes group">
+    <mat-button-toggle-group multiple (change)="filterChange('class', $event)">
       <mat-button-toggle
         *ngFor="let heroClass of heroClasses$ | async"
         value="{{ heroClass.name }}"
       >
         <img src="{{ heroClass.imageURL }}" />
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <div class="hero-types group">
+    <mat-button-toggle-group>
+      <mat-button-toggle
+        *ngFor="let heroType of heroTypes$ | async"
+        value="{{ heroType.name }}"
+      >
+        <img src="{{ heroType.imageURL }}" />
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <div class="hero-tole group">
+    <mat-button-toggle-group>
+      <mat-button-toggle
+        *ngFor="let heroRole of heroRoles$ | async"
+        value="{{ heroRole.name }}"
+      >
+        <img src="{{ heroRole.imageURL }}" />
       </mat-button-toggle>
     </mat-button-toggle-group>
   </div>

@@ -12,7 +12,7 @@ import { HeroItem } from 'src/app/_interfaces/heroItem.interface';
 import { HeroTypesService } from 'src/app/_services/hero-types.service';
 import { HeroesService } from 'src/app/_services/heroes.service';
 import { HeroClassesService } from 'src/app/_services/hero-classes.service';
-import { HeroClasses } from 'src/app/_models/heroClasses';
+import { HeroClass } from 'src/app/_models/heroClass';
 
 @Component({
   selector: 'app-hero-list',
@@ -107,23 +107,21 @@ export class HeroListComponent implements OnInit, OnDestroy {
     this.heroClassesService
       .getHeroClasses()
       .pipe(
-        switchMap((classes: HeroClasses[]) => {
-          const heroClassesImageStream = classes.map(
-            (heroClass: HeroClasses) => {
-              return this.heroClassesService
-                .getHeroClassesImageURL(heroClass.name)
-                .pipe(
-                  map((url) => {
-                    let obj = {
-                      id: heroClass.id,
-                      name: heroClass.name,
-                      imageURL: url
-                    };
-                    return obj;
-                  })
-                );
-            }
-          );
+        switchMap((classes: HeroClass[]) => {
+          const heroClassesImageStream = classes.map((heroClass: HeroClass) => {
+            return this.heroClassesService
+              .getHeroClassesImageURL(heroClass.name)
+              .pipe(
+                map((url) => {
+                  let obj = {
+                    id: heroClass.id,
+                    name: heroClass.name,
+                    imageURL: url
+                  };
+                  return obj;
+                })
+              );
+          });
           return combineLatest([...heroClassesImageStream]);
         }),
         map((heroClassImage) => {

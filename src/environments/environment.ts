@@ -14,7 +14,7 @@ export const environment = {
     measurementId: 'G-478YF9GGQ6'
   },
   FIRESTORE_ROOT: 'DEV/DEV/',
-  FIRESTORAGE_ROOT: '/ATC_images/'
+  FIRESTORAGE_ROOT: '/ATC_images'
 };
 
 /*

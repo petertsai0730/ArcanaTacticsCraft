@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs';
 import { Hero } from '../_models/hero';
-import { HeroClasses } from '../_models/heroClasses';
+import { HeroClass } from '../_models/heroClass';
+import { HeroRole } from '../_models/heroRole';
 
 export interface ApiInterface {
   // Hero
@@ -8,6 +9,9 @@ export interface ApiInterface {
   updateHero?: (hero: Hero) => Promise<any>;
   createHero?: (hero: Hero) => Promise<any>;
   getHeroImageUrl?: (heroId: string) => Observable<string>;
-  getHeroClasses: (className: string) => Observable<HeroClasses[]>;
+  getHeroClasses: (className: string) => Observable<HeroClass[]>;
   getHeroClassImageURL: (className: string) => Observable<string>;
+  getHeroTypeImageURL?: (typeName: string) => Observable<string>;
+  getHeroRoles?: () => Observable<HeroRole[]>;
+  getHeroRoleImageURL?: (roleName: string) => Observable<string>;
 }

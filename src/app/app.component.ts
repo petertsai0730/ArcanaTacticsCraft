@@ -16,8 +16,5 @@ export class AppComponent {
     console.log('app start');
     this.heroTypeSerive.getHeroType().subscribe(this.heroTypeSerive.heroTypes$);
     this.heroesService.getHeroes().subscribe(this.heroesService.heroes$);
-    // this.heroClassesService
-    //   .getHeroClasses()
-    //   .subscribe(this.heroClassesService.heroClasses$);
   }
 }

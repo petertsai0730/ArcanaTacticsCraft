@@ -5,7 +5,8 @@ import { map } from 'rxjs/operators';
 import { Status } from '../_enums/status.enum';
 import { ApiInterface } from '../_interfaces/api.interface';
 import { Hero } from '../_models/hero';
-import { HeroClasses } from '../_models/heroClasses';
+import { HeroClass } from '../_models/heroClass';
+import { HeroRole } from '../_models/heroRole';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ import { HeroClasses } from '../_models/heroClasses';
 export class Api implements ApiInterface {
   /** mock data */
 
-  private heroClasses$ = new BehaviorSubject<HeroClasses[]>([
+  private heroClasses$ = new BehaviorSubject<HeroClass[]>([
     { id: 'dfd4bbfbae6478854a1bdea2df9c43cc', name: 'Swordsman' },
     { id: '276b2903b2f76eae5a6fa100f590e6ac', name: 'Archer' },
     { id: '68086c1119bafdfe463c769afb7010f4', name: 'Rogue' },
@@ -22,6 +23,12 @@ export class Api implements ApiInterface {
     { id: 'c91256eb831b5a46d9e5a9dc685993e2', name: 'Warrior' },
     { id: '616fe97570fd8fc3fbae3222b06748e6', name: 'Lancer' },
     { id: 'b200ccdbb93ef3ebe05017fcf467c043', name: 'Spirit' }
+  ]);
+
+  private heroRoles$ = new BehaviorSubject<HeroRole[]>([
+    { name: 'Attack' },
+    { name: 'Defense' },
+    { name: 'Support' }
   ]);
 
   constructor(private httpClient: HttpClient) {}
@@ -50,12 +57,28 @@ export class Api implements ApiInterface {
     });
   }
 
-  getHeroClasses(): Observable<HeroClasses[]> {
+  getHeroClasses(): Observable<HeroClass[]> {
     return this.heroClasses$;
   }
   getHeroClassImageURL(className: string): Observable<string> {
     return new Observable((observer) => {
       observer.next(`/assets/images/classes/class_${className}.png`);
+    });
+  }
+
+  getHeroTypeImageURL(typeName: string): Observable<string> {
+    return new Observable((observer) => {
+      observer.next(`/assets/images/types/type_${typeName}.png`);
+    });
+  }
+
+  getHeroRoles(): BehaviorSubject<HeroRole[]> {
+    return this.heroRoles$;
+  }
+
+  getHeroRoleImageURL(roleName: string): Observable<string> {
+    return new Observable((observer) => {
+      observer.next(`/assets/images/roles/role_${roleName}.png`);
     });
   }
 }
